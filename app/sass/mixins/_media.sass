@@ -1,19 +1,19 @@
 @import ../utils/variables
 
 @mixin media-tablet
-  @media (max-width: $mediaWidthTablet)
+  @media (min-width: $mediaWidthTablet)
     @content
 
 
 
 @mixin media-tablet-horizontal
-  @media (max-width: $mediaWidthTabletHorizontal)
+  @media (min-width: $mediaWidthTabletHorizontal)
     @content
 
 
 
 @mixin media-laptop
-  @media (max-width: $mediaWidthLaptop)
+  @media (min-width: $mediaWidthLaptop)
     @content
 
 

@@ -8,11 +8,149 @@
     <link rel="stylesheet" href="css/app.min.css">
   </head>
   <body>
-    <header>
-      <p>Хедер</p>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__content">
+          <p>Типография</p>
+          <p>Быстро</p>
+          <p>Дешево</p>
+          <p>Зае**сь</p>
+        </div><a class="header__whatsup" href="tel:81234567890">
+          <p>Напиши нам в What's App</p>
+          <p>Ответим быстро</p><img src="images/dest/whatsup.webp" alt="logo whatsup"></a>
+        <div class="header__phone"><a href="tel:81234567890">8(123) 456-78-90</a><a href="mailto:123@123.as">8(123) 456-78-90</a></div>
+      </div>
     </header>
     <main class="main">
-      <p>контент</p>
+      <section class="banner">
+        <div class="wrapper">
+          <h1 class="banner__title">Цифровая <span>печать</span></h1>
+          <h2 class="banner__subtitle">Цена за лист <span>А4 </span>от <span>7.5 ₽</span></h2>
+          <h2 class="banner__descr">печатаем на бумаге, картоне <br>и самоклеющихся материалах</h2>
+        </div>
+        <div class="banner__list banner__abs">Срок от 1 часа</div>
+        <button class="banner__abs banner__btn" type="button">Закажи сейчас</button>
+        <div class="banner__worm banner__abs"><img src="images/dest/banner-abs-worm.png"></div>
+        <div class="banner__dots banner__abs"><img src="images/dest/banner-abs-dots.png"></div>
+      </section>
+      <section class="services">
+        <div class="wrapper">
+          <div class="services__title">Что печатаем?</div>
+          <div class="services__items">
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <div class="services__item-title">Визитки</div>
+              <div class="services__item-descr">На плотном картоне, можно скруглить углы</div>
+            </div>
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <div class="services__item-title">Листовки</div>
+              <div class="services__item-descr">Бумага и размер на Ваш выбор, с выбором поможем.</div>
+            </div>
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <div class="services__item-title">Наклейки</div>
+              <div class="services__item-descr">Бумажная и полимерная самоклейка, порежем в любой размер и форму</div>
+            </div>
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <div class="services__item-title">Каталоги</div>
+              <div class="services__item-descr">Из любого материла, сборка на скрепку, пружину, термоклей.</div>
+            </div>
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <div class="services__item-title">Календари</div>
+              <div class="services__item-descr">Трио, Моно, Перекидной</div>
+            </div>
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <div class="services__item-title">А что еще?</div>
+              <div class="services__item-descr">Грамоты, открытки, приглашения, конверты, блокноты, пластиковые карты, сверление, ламинация.</div>
+            </div>
+          </div><img class="services__printer" src="images/dest/printer.jpg">
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="wrapper">
+          <h2 class="benefits__title">Как мы работаем?</h2>
+          <div class="benefits__items">
+            <div class="benefits__item">
+              <div class="benefits__item-title">Сообщаете о проблеме</div>
+              <div class="benefits__item-descr">Звоните в наш центр, описываете вашу проблему, в тот же день наш мастер приезжает к вам.</div>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__item-title">Бесплатная диагностика</div>
+              <div class="benefits__item-descr">Бумага и размер на Ваш выбор, с выбором поможем.</div>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__item-title">Наклейки</div>
+              <div class="benefits__item-descr">Бумажная и полимерная самоклейка, порежем в любой размер и форму</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="wrapper">
+          <h2 class="faq__title">Частые вопросы</h2>
+          <div class="faq__items">
+            <div class="faq__item">
+              <div class="faq__q">
+                <div class="faq__nick">Катя</div>
+                <div class="faq__content">Можно ли оплатить работы банковской картой?</div>
+              </div>
+              <div class="faq__a">
+                <div class="faq__nick">Поддержка</div>
+                <div class="faq__content">Да, оплатить работу можно и наличными и по банковской карте.</div>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__q">
+                <div class="faq__nick">Катя</div>
+                <div class="faq__content">Каков гарантийный срок работы?</div>
+              </div>
+              <div class="faq__a">
+                <div class="faq__nick">Поддержка</div>
+                <div class="faq__content">Гарантия на ремонтые работы дается сроком на 1 месяц, кроме работ по обработке от влаги. По работам связанным с обработкой от влаги дается гарантия 1 день.</div>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__q">
+                <div class="faq__nick">Катя</div>
+                <div class="faq__content">Вы используете оригинальные запчасти для ремонта?</div>
+              </div>
+              <div class="faq__a">
+                <div class="faq__nick">Поддержка</div>
+                <div class="faq__content">Мы работаем только с новыми оригинальными запасными частями поставляемых от производителя.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="wrapper">
+          <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7989.57711836622!2d30.427498!3d59.958783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce007f9f3b6ae87a!2z0KLQuNC_0L7Qs9GA0LDRhNC40Y8gUmVQcmludA!5e0!3m2!1sru!2sru!4v1673364814051!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="contacts__content">
+            <div class="contacts__title">Контакты:</div>
+            <div class="contacts__items"><a class="contacts__addres" href="#">г.Санкт-Петербург, Шоссе Революции, 31 </a><a class="contacts__phone" href="tel:9580826">958-08-26</a><a class="contacts__email" href="mailto: reprint.spb@gmail.com"> reprint.spb@gmail.com</a></div>
+            <div class="contacts__links"><img src="images/dest/caontacts-test.png"></div>
+          </div>
+        </div>
+      </section>
+      <script src="js/app.min.js"></script>
     </main>
   </body>
 </html>

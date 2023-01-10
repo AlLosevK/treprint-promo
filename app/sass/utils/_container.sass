@@ -1,2 +1,10 @@
-.container
+.wrapper
   position: relative
+  width: 300px
+  margin: 0 auto
+
+  @include media-tablet
+    width: 750px
+
+  @include media-laptop
+    width: 1040px

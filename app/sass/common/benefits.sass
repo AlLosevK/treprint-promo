@@ -1,0 +1,43 @@
+.benefits
+  padding: 100px 0
+  &__title
+    margin: 0 auto
+    text-align: center
+    font-size: 42px
+    font-weight: 800
+    line-height: 120%
+    margin-bottom: 70px
+  &__items
+    margin-top: 20px
+    display: grid
+    grid-template-rows: repeat(3, 1fr)
+    width: 80%
+    margin: 0 auto
+    &:before
+      content: ''
+      width: 70px
+      height: 340px
+      background-image: url('../images/dest/benefits-test.png')
+      background-repeat: no-repeat
+      background-size: 100% 100%
+      position: absolute
+      top: 115px
+      left: 46%
+      z-index: 50
+  &__item
+    width: 50%
+    padding: 10px 40px
+    text-align: right
+    position: relative
+    z-index: 100
+    &:nth-child(2n)
+      margin-right: 0
+      margin-left: auto
+      text-align: left
+    &-title
+      font-size: 24px
+      font-weight: 800
+      margin-bottom: 20px
+    &-descr
+      font-size: 16px
+      margin: auto
