@@ -51,6 +51,15 @@
       margin: 0 10px
       &:first-child
         margin-left: 0
+      &:last-child
+        color: red
+        position: relative
+        &:before
+          content: '₽'
+          position: absolute
+          top: 0
+          left: 100%
+          color: #000
   &__descr
     font-size: 30px
     font-weight: 300
