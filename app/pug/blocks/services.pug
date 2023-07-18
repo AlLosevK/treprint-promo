@@ -1,29 +1,35 @@
 section.services
+  .bg
+    .services-l
+      image(src="images/dest/icons/services-l.svg")
+    .services-b
+      image(src="images/dest/icons/services-b.svg")
   .wrapper
-    .services__title Что печатаем?
+    .services__title.section__title
+      h3 Что печатаем
+      span ?
     .services__items
       .services__item
         +icon("benefits-icon", "services__item-ico")
-        .services__item-title Визитки
-        .services__item-descr На плотном картоне, можно скруглить углы
+        h4.services__item-title Визитки
+        p.services__item-descr На плотном картоне, можно скруглить углы
       .services__item
         +icon("benefits-icon", "services__item-ico")
-        .services__item-title Листовки
-        .services__item-descr Бумага и размер на Ваш выбор, с выбором поможем.
+        h4.services__item-title Листовки
+        p.services__item-descr Бумага и размер на Ваш выбор, с выбором поможем.
       .services__item
         +icon("benefits-icon", "services__item-ico")
-        .services__item-title Наклейки
-        .services__item-descr Бумажная и полимерная самоклейка, порежем в любой размер и форму
+        h4.services__item-title Наклейки
+        p.services__item-descr Бумажная и полимерная самоклейка, порежем в любой размер и форму
       .services__item
         +icon("benefits-icon", "services__item-ico")
-        .services__item-title Каталоги
-        .services__item-descr Из любого материла, сборка на скрепку, пружину, термоклей.
+        h4.services__item-title Каталоги
+        p.services__item-descr Из любого материла, сборка на скрепку, пружину, термоклей.
       .services__item
         +icon("benefits-icon", "services__item-ico")
-        .services__item-title Календари
-        .services__item-descr Трио, Моно, Перекидной
+        h4.services__item-title Календари
+        p.services__item-descr Трио, Моно, Перекидной
       .services__item
         +icon("benefits-icon", "services__item-ico")
-        .services__item-title А что еще?
-        .services__item-descr Грамоты, открытки, приглашения, конверты, блокноты, пластиковые карты, сверление, ламинация.
-    img.services__printer(src="images/dest/services.webp")
+        h4.services__item-title А что еще?
+        p.services__item-descr Грамоты, открытки, приглашения, конверты, блокноты, пластиковые карты, сверление, ламинация.

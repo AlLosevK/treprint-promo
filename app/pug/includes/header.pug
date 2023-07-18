@@ -1,14 +1,19 @@
 header.header
   .wrapper
     .header__content
-      p Типография
-      p Быстро
-      p Дешево
+      p RePrint
     a(href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать").header__whatsup
-      p Напиши нам в What's App
-      p Ответим быстро
-      img(src="images/dest/whatsup.webp" alt="logo whatsup")
-    .header__phone
-      a(href="tel:8123310304") 330 - 03 - 04
-      a(href="mailto:reprint.spb@gmail.com") reprint.spb@gmail.com
+      .header__whatsup-content
+        p Остались вопросы?
+        p Пиши нам в What's App!
+      //- img(src="images/dest/icons/whatsup.svg" alt="logo whatsup")
+      .icon
+        include ../../images/dest/icons/whatsup.svg
+    .header__contacts
+      .header__phone
+        a(href="#") 330 - 03 - 04
+      .header__email
+        a(href="#") reprint.spb@gmail.com
+      .header__address
+        a(href="#") г.Санкт-Петербург, Шоссе Революции, 31
     

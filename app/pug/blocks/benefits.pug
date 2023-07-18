@@ -1,12 +1,22 @@
 section.benefits
+  .bg
+    .benefits-tr
+      image(src="images/dest/icons/benefits-tr.svg")
   .wrapper
-    h2.benefits__title Как мы работаем?
+    .benefits__title.section__title
+      h3 Как мы работаем
+      span ?
     .benefits__items
       .benefits__item
-        .benefits__item-title Передаете информацию по заказу
-        .benefits__item-descr Указываете материал, размер, количество, с одной или с двух сторон печать? Прикрепляете файл для печати, мы его проверяем.
+        span.benefits__item-abs 1
+        h4.benefits__item-title Передаешь информацию по заказу
+        p.benefits__item-descr Указываешь материал, размер, количество, с одной или с двух сторон печать. И прикрепляешь файл для печати. Мы сами его проверим!
       .benefits__item
-        .benefits__item-title Мы рассчитываем, Вы оплачиваете
+        .benefits__item-abs 2
+        h4.benefits__item-title Мы рассчитываем
+        p.benefits__item-descr Ты оплачиваешь
       .benefits__item
-        .benefits__item-title Спасибо.
-        .benefits__item-descr Забираете готовый заказ на нашем производстве.
+        .benefits__item-abs 3
+        h4.benefits__item-title Готово!
+        p.benefits__item-descr Забираешь готовый заказ на нашем производстве.
+    button.benefits__cta.benefits__btn(type="button") Заказывай

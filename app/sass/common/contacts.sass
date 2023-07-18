@@ -1,30 +1,76 @@
 .contacts
-  padding: 100px 0 0
+  padding-bottom: 0
   .wrapper
-    width: 100%
     display: grid
-    grid-template-columns: auto 650px
   &__map
+    order: 2
   &__content
-    padding: 130px 50px
+    order: 1
     display: -webkit-flex
     display: -ms-flex
     display: flex
     flex-direction: column
     justify-content: center
     align-items: flex-start
-    gap: 50px
+    gap: calc(35 / 320) * 100vw
+    padding-bottom: calc(60 / 320) * 100vw
   &__title
-    font-size: 32px
-    font-weight: 800
   &__items
-    font-size: 27px
-    font-weight: 300
-    line-height: 120%
     display: -webkit-flex
     display: -ms-flex
     display: flex
     flex-direction: column
     justify-content: flex-start
     align-items: stretch
-    gap: 30px
+    gap: calc(10 / 320) * 100vw
+  &__link
+    font-size: calc(9 / 320) * 100vw
+    line-height: calc(9 / 320) * 100vw
+    font-weight: 300
+  &__btn
+    margin-top: calc(50 / 320) * 100vw
+    margin-right: 0
+    position: relative
+    z-index: 100
+    transform-style: preserve-3d
+    &:before
+      content: ''
+      background-image: url('../images/dest/icons/contacts-btn-bg.svg')
+      background-size: 100%
+      background-repeat: no-repeat
+      position: absolute
+      top: calc(-360 / 1920) * 100vw
+      left: 50%
+      transform: translate(-50%, 0) translateZ(-1px)
+      width: calc(209 / 320) * 100vw
+      height: calc(190 / 320) * 100vw
+    &:after
+      content: ''
+      background-image: url('../images/dest/icons/banner-btn-arr.svg')
+      background-size: 100%
+      background-repeat: no-repeat
+      position: absolute
+      top: calc(34 / 1920) * 100vw
+      left: 50%
+      transform: translate(-50%, 100%) translateZ(-1px)
+      width: calc(98 / 320) * 100vw
+      height: calc(33 / 320) * 100vw
+
+
+  @include media-laptop
+    .wrapper
+      width: 100vw
+      grid-template-columns: 710px
+      gap: 0 20px
+    &__map
+      order: 1
+    &__content
+      order: 2
+      gap: 100px
+    &__link
+      font-size: 27px
+      line-height: 32.4px
+      font-weight: 300
+    &__btn
+      margin-right: auto
+      margin-top: 45px
