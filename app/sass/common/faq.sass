@@ -1,9 +1,13 @@
 .faq
   position: relative
+  .wrapper
+    position: relative
+    z-index: 100
   .bg
     position: absolute
     width: 100vw
     height: 100%
+    z-index: 10
   &_r
     position: absolute
     right: 0
@@ -12,8 +16,14 @@
   &_lb
     position: absolute
     bottom: -10%
-    left: 0
+    left: -90px
     z-index: 100
+    width: calc(186 / 320) * 100vw
+    height: calc(106 / 320) * 100vw
+    img
+      &:last-child
+        width: calc(42 / 320) * 100vw
+        height: calc(16 / 320) * 100vw
   .wrapper
   &__title
   &__items
@@ -79,6 +89,21 @@
 
 
   @include media-laptop
+    .wrapper
+    .bg
+      height: 39%
+      .faq_lb
+        bottom: -58%
+        left: -333px
+        z-index: 99
+        img
+          &:last-child
+            position: absolute
+            top: 0px
+            right: 230px
+            width: calc(135 / 1920) * 100vw
+            height: calc(50 / 1920) * 100vw
+            transform: rotate(90deg)
     &__items
       display: grid
       margin: calc(125 / 1920) * 100vw 0

@@ -1,5 +1,8 @@
 .services
   position: relative
+  .wrapper
+    position: relative
+    z-index: 100
   .bg
     width: 100vw
     height: 100%
@@ -10,7 +13,17 @@
     .services-l
       position: absolute
       top: -25px
-      left: 0
+      left: -104px
+      width: 166px
+      height: 209px
+      img
+        &:last-child
+          position: absolute
+          top: 85px
+          right: 90px
+          width: calc(135 / 1920) * 100vw
+          height: calc(50 / 1920) * 100vw
+          transform: rotate(90deg)
     .services-b
       position: absolute
       bottom: -15px
@@ -70,6 +83,9 @@
   @include media-laptop
     .wrapper
       gap: 120px
+    .bg
+      .services-l
+        left: -190px
     &__items
       grid-template-columns: repeat(3, 13vw)
       width: auto

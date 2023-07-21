@@ -10,7 +10,13 @@
     .benefits-tr
       position: absolute
       top: -20%
-      right: 0
+      right: -55px
+      width: 106px
+      height: 185px
+      img
+        &:last-child
+          width: calc(42 / 320) * 100vw
+          height: calc(16 / 320) * 100vw
   .wrapper
     position: relative
     z-index: 100
@@ -127,6 +133,16 @@
   @include media-laptop
     .wrapper
       align-items: stretch
+    .bg
+      .benefits-tr
+        right: -204px
+        img
+          &:last-child
+            position: absolute
+            top: 300px
+            left: -25px
+            width: calc(135 / 1920) * 100vw
+            height: calc(50 / 1920) * 100vw
     &__items
       width: 100%
       align-items: stretch
