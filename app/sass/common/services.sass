@@ -34,11 +34,11 @@
     &:before
       content: ''
       background-image: url('../images/dest/icons/services-worm.svg')
-      background-size: cover
+      background-size: contain
       background-repeat: no-repeat
       position: absolute
-      width: 8px
-      height: 93px
+      width: calc(8 / 320) * 100vw
+      height: calc(93 / 320) * 100vw
       top: 15%
       left: 50%
       transform: translate(-50%, -50%)
@@ -68,8 +68,47 @@
 
 
   @include media-laptop
+    .wrapper
+      gap: 120px
     &__items
       grid-template-columns: repeat(3, 13vw)
       width: auto
-      gap: 90px 170px
+      gap: calc(90 / 1920) * 100vw calc(170 / 1920) * 100vw
       margin: 0 auto
+      &:after,
+      &:before
+        width: calc(21 / 1920) * 100vw
+        height: calc(245 / 1920) * 100vw
+        bottom: 27%
+        top: auto
+      &:before
+        left: 30%
+        transform: translate(0, 0) rotateY(180deg)
+      &:after
+        left: 68%
+        transform: translate(0, 0)
+    &__item
+      align-self: flex-start
+      &-descr
+        margin-top: calc(36 / 1920) * 100vw
+    &__printer
+      &-abs
+        position: absolute
+        left: -5px
+        top: -100px
+        transform: translate(-100%, -100%)
+        font-size: 30px
+        line-height: 100%
+        text-transform: uppercase
+        font-weight: 300
+        &:after
+          content: ''
+          background-image: url('../images/dest/icons/banner-btn-arr.svg')
+          background-size: 100%
+          background-repeat: no-repeat
+          position: absolute
+          bottom: calc(-109 / 1920) * 100vw
+          left: 76px
+          transform: translateZ(-1px) rotateX(180deg)
+          width: calc(250 / 1920) * 100vw
+          height: calc(83 / 1920) * 100vw

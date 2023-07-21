@@ -40,7 +40,8 @@
         width: calc(42 / 320) * 100vw
         height: calc(67 / 320) * 100vw
         top: 50%
-        right: calc(-75 / 320) * 100vw
+        right: -75px
+        transform: translate(100%, 0)
       .benefits__item-abs
         &:before
           background-color: cyan
@@ -108,17 +109,32 @@
       top: -300%
       left: 44%
       transform: translate(-50%, 0) translateZ(-1px)
-      width: 219px
-      height: 190px
+      width: calc(219 / 320) * 100vw
+      height: calc(190 / 320) * 100vw
+    &:after
+      content: ''
+      background-image: url('../images/dest/icons/banner-btn-arr.svg')
+      background-size: 100%
+      background-repeat: no-repeat
+      position: absolute
+      top: calc(-109 / 1920) * 100vw
+      left: 20px
+      transform: translateZ(-1px) rotateX(180deg)
+      width: calc(250 / 1920) * 100vw
+      height: calc(83 / 1920) * 100vw
 
 
   @include media-laptop
+    .wrapper
+      align-items: stretch
     &__items
+      width: 100%
       align-items: stretch
       gap: calc(70 / 1920) * 100vw
       margin: calc(135 / 1920) * 100vw auto calc(150 / 1920) * 100vw
     &__item
-      max-width: calc(750 / 1920) * 100vw
+      max-width: calc(643 / 1920) * 100vw
+      padding-left: calc(101 / 1920) * 100vw
       &-abs
         font-size: calc(60 / 1920) * 100vw
         &:before
@@ -129,13 +145,26 @@
       &-descr
         margin-top: calc(20 / 1920) * 100vw
       &:nth-child(1)
+        margin-left: calc(168 / 1920) * 100vw
         &:before
           width: calc(126 / 1920) * 100vw
           height: calc(202 / 1920) * 100vw
+          top: 10%
+          right: -20px
       &:nth-child(2)
-        margin-left: calc(200 / 1920) * 100vw
+        margin-left: calc(450 / 1920) * 100vw
+        &:before
+          width: calc(293 / 1920) * 100vw
+          height: calc(236 / 1920) * 100vw
+          left: -20%
       &:nth-child(3)
-        margin-left: calc(500 / 1920) * 100vw
+        margin-left: calc(727 / 1920) * 100vw
         max-width: calc(430 / 1920) * 100vw
         &:before
           width: calc(7 / 1920) * 100vw
+    &__btn
+      margin-right: 0px
+      &:before
+        width: calc(502 / 1920) * 100vw
+        height: calc(437 /  1920) * 100vw
+        top: -250%

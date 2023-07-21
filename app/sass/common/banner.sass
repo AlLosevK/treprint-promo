@@ -27,6 +27,34 @@
       position: absolute
       top: calc(245 / 320) * 100vw
       left: 0
+    img
+      width: 100%
+      height: 100%
+      display: block
+    @include media-laptop
+      .banner-tl
+        top: calc(-330 / 1920) * 100vw
+        left: calc(-200 / 1920) * 100vw
+        width: calc(915 / 1920) * 100vw
+        height: calc(952 / 1920) * 100vw
+      .banner-tr
+        top: calc(-80 / 1920) * 100vw
+        right: calc(-250 / 1920) * 100vw
+        img
+          &:first-child
+            width: calc(693 / 1920) * 100vw
+            height: calc(424 / 1920) * 100vw
+          &:last-child
+            position: absolute
+            bottom: 80px
+            left: 125px
+            width: calc(135 / 1920) * 100vw
+            height: calc(50 / 1920) * 100vw
+      .banner-ring
+        top: calc(610 / 1920) * 100vw
+        left: calc(68 / 1920) * 100vw
+        width: calc(180 / 1920) * 100vw
+        height: calc(255 / 1920) * 100vw
   .wrapper
     display: -webkit-flex
     display: -ms-flex
@@ -54,10 +82,10 @@
     position: absolute
     bottom: 10%
     z-index: 100
-    right: -6%
+    right: -36%
     @include media-laptop
       bottom: 13%
-      right: -22%
+      right: -6%
     &:before
       content: ''
       background-color: magenta
