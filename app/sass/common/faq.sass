@@ -15,8 +15,8 @@
     z-index: 100
   &_lb
     position: absolute
-    top: 328px
-    left: -91px
+    top: calc(328 / 320) * 100vw
+    left: calc(-91 / 320) * 100vw
     z-index: 100
     width: calc(186 / 320) * 100vw
     height: calc(106 / 320) * 100vw
@@ -25,8 +25,8 @@
         width: calc(42 / 320) * 100vw
         height: calc(16 / 320) * 100vw
         position: absolute
-        top: -11px
-        right: 44px
+        top: calc(-11 / 320) * 100vw
+        right: calc(44 / 320) * 100vw
         transform: rotate(90deg)
   .wrapper
   &__title
@@ -53,8 +53,8 @@
         background-size: contain
         background-repeat: no-repeat
         position: absolute
-        width: 8px
-        height: 93px
+        width: calc(8 / 320) * 100vw
+        height: calc(93 / 320) * 100vw
         bottom: auto
         right: auto
         top: calc(10 / 320) * 100vw
@@ -98,10 +98,10 @@
     z-index: 10
     &-abs
       position: absolute
-      top: -75px
-      left: 75px
+      top: calc(-75 / 320) * 100vw
+      left: calc(75 / 320) * 100vw
       z-index: 1000
-      font-size: 11px
+      font-size: calc(11 / 320) * 100vw
       line-height: 100%
       text-transform: uppercase
       font-weight: 300
@@ -111,8 +111,8 @@
         background-size: contain
         background-repeat: no-repeat
         position: absolute
-        top: 20px
-        left: -8px
+        top: calc(20 / 320) * 100vw
+        left: calc(-8 / 320) * 100vw
         transform: rotateX(180deg) translateZ(-1px)
         width: calc(95 / 320) * 100vw
         height: calc(26 / 320) * 100vw
@@ -122,22 +122,22 @@
     .wrapper
     .bg
       .faq_r
-        width: 303px
-        height: 545px
+        width: calc(303 / 1920) * 100vw
+        height: calc(545 / 1920) * 100vw
         img
           width: 100%
           height: 100%
       .faq_lb
         top: 38%
-        left: -333px
+        left: calc(-333 / 1920) * 100vw
         z-index: 99
-        width: 778px
-        height: 445px
+        width: calc(778 / 1920) * 100vw
+        height: calc(445 / 1920) * 100vw
         img
           &:last-child
             position: absolute
-            top: 0px
-            right: 230px
+            top: 0
+            right: calc(230 / 1920) * 100vw
             width: calc(135 / 1920) * 100vw
             height: calc(50 / 1920) * 100vw
             transform: rotate(90deg)
@@ -166,7 +166,7 @@
         &:before
           width: calc(21 / 1920) * 100vw
           height: calc(246 / 1920) * 100vw
-          left: -54px
+          left: calc(-54 / 1920) * 100vw
       &:nth-child(3)
         grid-row: 3/4
         &:before
@@ -181,10 +181,9 @@
       margin-top: 0
       &-abs
         position: absolute
-        left: -5px
-        top: -150px
-        transform: translate(-100%, -100%)
-        font-size: 30px
+        left: calc(-5 / 1920) * 100vw
+        top: calc(-150 / 1920) * 100vw
+        font-size: calc(30 / 1920) * 100vw
         line-height: 100%
         text-transform: uppercase
         font-weight: 300
@@ -196,7 +195,7 @@
           position: absolute
           top: auto
           bottom: calc(-109 / 1920) * 100vw
-          left: 126px
+          left: calc(126 / 1920) * 100vw
           transform: translateZ(-1px) rotateX(180deg)
           width: calc(250 / 1920) * 100vw
           height: calc(83 / 1920) * 100vw
