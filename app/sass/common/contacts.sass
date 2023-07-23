@@ -4,6 +4,7 @@
     display: grid
     position: relative
     z-index: 100
+    grid-template-columns: 1fr
   &__title
     position: relative
     &:before
@@ -16,9 +17,12 @@
       height: calc(93 / 320) * 100vw
       bottom: 0
       left: 0%
-      transform: rotate(90deg) translate(69px, -46%)
+      transform: rotate(90deg) translate(710%, -46%)
   &__map
     order: 2
+    min-height: 83vw
+    iframe
+      min-height: 83vw
   &__content
     order: 1
     display: -webkit-flex
