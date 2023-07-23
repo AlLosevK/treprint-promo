@@ -12,17 +12,17 @@
     z-index: 10
     .services-l
       position: absolute
-      top: -25px
+      top: 15px
       left: -104px
       width: 166px
       height: 209px
       img
         &:last-child
           position: absolute
-          top: 85px
-          right: 90px
-          width: calc(135 / 1920) * 100vw
-          height: calc(50 / 1920) * 100vw
+          top: 23px
+          right: 26px
+          width: calc(42 / 320) * 100vw
+          height: calc(16 / 320) * 100vw
           transform: rotate(90deg)
     .services-b
       position: absolute
@@ -72,12 +72,6 @@
     &-descr
       text-align: center
       margin-top: calc(10 / 320) * 100vw
-  &__printer
-    margin: 0 auto
-    display: block
-    margin-top: calc(40 / 320) * 100vw
-    position: relative
-    z-index: 10
 
 
   @include media-laptop
@@ -86,6 +80,24 @@
     .bg
       .services-l
         left: -190px
+        width: 442px
+        height: 555px
+        img
+          &:last-child
+            width: calc(135 / 1920) * 100vw
+            height: calc(50 / 1920) * 100vw
+            top: 85px
+            right: 85px
+      .services-b
+        width: 355px
+        height: 220px
+        bottom: auto
+        left: auto
+        top: 50px
+        right: 150px
+        img
+          width: 100%
+          height: 100%
     &__items
       grid-template-columns: repeat(3, 13vw)
       width: auto

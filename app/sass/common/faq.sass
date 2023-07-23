@@ -7,16 +7,16 @@
     position: absolute
     width: 100vw
     height: 100%
-    z-index: 10
+    z-index: 101
   &_r
     position: absolute
     right: 0
-    top: 15%
+    top: 13%
     z-index: 100
   &_lb
     position: absolute
-    bottom: -10%
-    left: -90px
+    top: 328px
+    left: -91px
     z-index: 100
     width: calc(186 / 320) * 100vw
     height: calc(106 / 320) * 100vw
@@ -24,6 +24,10 @@
       &:last-child
         width: calc(42 / 320) * 100vw
         height: calc(16 / 320) * 100vw
+        position: absolute
+        top: -11px
+        right: 44px
+        transform: rotate(90deg)
   .wrapper
   &__title
   &__items
@@ -86,16 +90,49 @@
   &__nick
     color: rgba(0, 0, 0, .7)
   &__content
+  &__printer
+    margin: 0 auto
+    display: block
+    margin-top: calc(145 / 320) * 100vw
+    position: relative
+    z-index: 10
+    &-abs
+      position: absolute
+      top: -75px
+      left: 75px
+      z-index: 1000
+      font-size: 11px
+      line-height: 100%
+      text-transform: uppercase
+      font-weight: 300
+      &:after
+        content: ''
+        background-image: url('../images/dest/icons/banner-btn-arr.svg')
+        background-size: contain
+        background-repeat: no-repeat
+        position: absolute
+        top: 20px
+        left: -8px
+        transform: rotateX(180deg) translateZ(-1px)
+        width: calc(95 / 320) * 100vw
+        height: calc(26 / 320) * 100vw
 
 
   @include media-laptop
     .wrapper
     .bg
-      height: 39%
+      .faq_r
+        width: 303px
+        height: 545px
+        img
+          width: 100%
+          height: 100%
       .faq_lb
-        bottom: -58%
+        top: 38%
         left: -333px
         z-index: 99
+        width: 778px
+        height: 445px
         img
           &:last-child
             position: absolute
@@ -106,7 +143,7 @@
             transform: rotate(90deg)
     &__items
       display: grid
-      margin: calc(125 / 1920) * 100vw 0
+      margin: calc(125 / 1920) * 100vw 0 calc(500 / 1920) * 100vw
       gap: calc(30 / 1920) * 100vw 0
     &__item
       max-width: calc(580 / 1920) * 100vw
@@ -123,17 +160,43 @@
         padding: 0
         grid-column: 2/3
         grid-row: 2/3
-      &:nth-child(3)
-        grid-row: 3/4
-        &:before
-          left: auto
-          right: 5%
-          top: -160%
       &:nth-child(4)
         grid-row: 4/5
       &:nth-child(2n - 1)
         &:before
           width: calc(21 / 1920) * 100vw
           height: calc(246 / 1920) * 100vw
+          left: -54px
+      &:nth-child(3)
+        grid-row: 3/4
+        &:before
+          left: auto
+          right: 5%
+          left: auto
+          top: -160%
     &__q
       white-space: nowrap
+
+    &__printer
+      margin-top: 0
+      &-abs
+        position: absolute
+        left: -5px
+        top: -150px
+        transform: translate(-100%, -100%)
+        font-size: 30px
+        line-height: 100%
+        text-transform: uppercase
+        font-weight: 300
+        &:after
+          content: ''
+          background-image: url('../images/dest/icons/banner-btn-arr.svg')
+          background-size: 100%
+          background-repeat: no-repeat
+          position: absolute
+          top: auto
+          bottom: calc(-109 / 1920) * 100vw
+          left: 126px
+          transform: translateZ(-1px) rotateX(180deg)
+          width: calc(250 / 1920) * 100vw
+          height: calc(83 / 1920) * 100vw

@@ -9,7 +9,7 @@
     z-index: 10
     .benefits-tr
       position: absolute
-      top: -20%
+      top: -11%
       right: -55px
       width: 106px
       height: 185px
@@ -17,6 +17,9 @@
         &:last-child
           width: calc(42 / 320) * 100vw
           height: calc(16 / 320) * 100vw
+          position: absolute
+          top: 64px
+          left: -11px
   .wrapper
     position: relative
     z-index: 100
@@ -34,7 +37,7 @@
   &__item
     position: relative
     z-index: 100
-    max-width: calc(192 / 320) * 100vw
+    max-width: calc(205 / 320) * 100vw
     padding-left: calc(37 / 320) * 100vw
     &:nth-child(1)
       &:before
@@ -46,7 +49,7 @@
         width: calc(42 / 320) * 100vw
         height: calc(67 / 320) * 100vw
         top: 50%
-        right: -75px
+        right: -23px
         transform: translate(100%, 0)
       .benefits__item-abs
         &:before
@@ -117,17 +120,6 @@
       transform: translate(-50%, 0) translateZ(-1px)
       width: calc(219 / 320) * 100vw
       height: calc(190 / 320) * 100vw
-    &:after
-      content: ''
-      background-image: url('../images/dest/icons/banner-btn-arr.svg')
-      background-size: 100%
-      background-repeat: no-repeat
-      position: absolute
-      top: calc(-109 / 1920) * 100vw
-      left: 20px
-      transform: translateZ(-1px) rotateX(180deg)
-      width: calc(250 / 1920) * 100vw
-      height: calc(83 / 1920) * 100vw
 
 
   @include media-laptop
@@ -135,7 +127,9 @@
       align-items: stretch
     .bg
       .benefits-tr
-        right: -204px
+        right: -215px
+        width: 445px
+        height: 778px
         img
           &:last-child
             position: absolute
@@ -147,7 +141,7 @@
       width: 100%
       align-items: stretch
       gap: calc(70 / 1920) * 100vw
-      margin: calc(135 / 1920) * 100vw auto calc(150 / 1920) * 100vw
+      margin: calc(135 / 1920) * 100vw auto calc(90 / 1920) * 100vw
     &__item
       max-width: calc(643 / 1920) * 100vw
       padding-left: calc(101 / 1920) * 100vw
@@ -177,7 +171,12 @@
         margin-left: calc(727 / 1920) * 100vw
         max-width: calc(430 / 1920) * 100vw
         &:before
-          width: calc(7 / 1920) * 100vw
+          width: calc(242 / 1920) * 100vw
+          height: calc(67 / 1920) * 100vw
+          bottom: 0
+          right: 0
+          left: auto
+          transform: translate(100%, 100%) rotateY(180deg)
     &__btn
       margin-right: 0px
       &:before
