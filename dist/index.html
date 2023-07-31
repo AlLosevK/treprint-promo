@@ -5,21 +5,205 @@
     <title>Title your site</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
   </head>
   <body>
-    <header>
-      <ul>
-        <li>Главная</li>
-        <li>О нас</li>
-        <li>Контакты</li>
-      </ul>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__content">
+          <p>RePrint</p>
+        </div><a class="header__whatsup" href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать">
+          <div class="header__whatsup-content">
+            <p>Остались вопросы?</p>
+            <p>Пиши нам в What's App!</p>
+          </div>
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" fill="none"><rect width="55" height="55" x="1" y="1" fill="#fff" rx="14"/><g filter="url(#a)"><path fill="#67C15E" fill-rule="evenodd" d="M28.494 9C17.744 9 9 17.747 9 28.5c0 4.264 1.375 8.22 3.713 11.43l-2.43 7.244 7.496-2.395A19.345 19.345 0 0 0 28.506 48C39.256 48 48 39.253 48 28.5S39.256 9 28.506 9h-.012Zm-5.444 9.905c-.378-.905-.664-.94-1.237-.963a11.031 11.031 0 0 0-.653-.023c-.746 0-1.525.218-1.995.7-.573.584-1.994 1.948-1.994 4.745 0 2.798 2.04 5.503 2.315 5.882.287.378 3.977 6.201 9.707 8.575 4.481 1.857 5.811 1.685 6.83 1.467 1.49-.321 3.359-1.422 3.829-2.752.47-1.33.47-2.465.332-2.705-.137-.241-.516-.378-1.089-.665-.573-.287-3.358-1.662-3.885-1.846-.516-.195-1.008-.126-1.398.425-.55.768-1.089 1.547-1.524 2.017-.344.367-.906.413-1.376.218-.63-.263-2.395-.883-4.572-2.82-1.685-1.502-2.831-3.37-3.163-3.932-.333-.573-.035-.906.229-1.215.286-.356.561-.608.848-.94.286-.333.447-.505.63-.895.195-.378.057-.768-.08-1.054-.138-.287-1.284-3.084-1.754-4.219Z" clip-rule="evenodd"/></g><rect width="55" height="55" x="1" y="1" stroke="#000" stroke-width="2" rx="14"/><defs><filter id="a" width="40" height="41" x="8" y="9" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="-1" dy="2"/><feGaussianBlur stdDeviation="1"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="shape" result="effect1_innerShadow_47_493"/></filter></defs></svg></div></a>
+        <div class="header__contacts">
+          <div class="header__phone"><a href="#">330 - 03 - 04</a></div>
+          <div class="header__email"><a href="#">reprint.spb@gmail.com</a></div>
+          <div class="header__address"><a href="#">г.Санкт-Петербург, Шоссе Революции, 31</a></div>
+        </div>
+      </div>
     </header>
     <main class="main">
-      <h2>Раотает</h2>
+      <section class="banner">
+        <div class="bg">
+          <div class="banner-tl">
+            <image src="images/dest/icons/banner-tl.svg"></image>
+          </div>
+          <div class="banner-tr">
+            <image src="images/dest/icons/banner-tr.svg"></image>
+            <image src="images/dest/icons/dots.svg"></image>
+          </div>
+          <div class="banner-ring">
+            <image src="images/dest/icons/banner-ring.svg"></image>
+          </div>
+        </div>
+        <div class="wrapper">
+          <h1 class="banner__title">Цифровая печать
+            <p class="banner__list banner__abs">от 1 часа</p>
+          </h1>
+          <div class="banner__subtitle"> 
+            <h2>100 листовок А5</h2><span>800 ₽</span>
+          </div>
+          <p class="banner__descr">печатаем на бумаге, картоне <br>и самоклеющихся материалах</p>
+          <button class="banner__btn" type="button" onclick="location.href='https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать';">Закажи сейчас через вотсап</button>
+        </div>
+      </section>
+      <section class="services">
+        <div class="bg">
+          <div class="services-l">
+            <image src="images/dest/icons/services-l.svg"></image>
+            <image src="images/dest/icons/dots.svg"></image>
+          </div>
+          <div class="services-b">
+            <image src="images/dest/icons/services-b.svg"></image>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="services__title section__title">
+            <h3>Что печатаем</h3><span>?</span>
+          </div>
+          <div class="services__items">
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <h4 class="services__item-title">Визитки</h4>
+              <p class="services__item-descr">На плотном картоне, можно скруглить углы</p>
+            </div>
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <h4 class="services__item-title">Листовки</h4>
+              <p class="services__item-descr">Бумага и размер на Ваш выбор, с выбором поможем.</p>
+            </div>
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <h4 class="services__item-title">Наклейки</h4>
+              <p class="services__item-descr">Бумажная и полимерная самоклейка, порежем в любой размер и форму</p>
+            </div>
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <h4 class="services__item-title">Каталоги</h4>
+              <p class="services__item-descr">Из любого материла, сборка на скрепку, пружину, термоклей.</p>
+            </div>
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <h4 class="services__item-title">Календари</h4>
+              <p class="services__item-descr">Трио, Моно, Перекидной</p>
+            </div>
+            <div class="services__item">
+                  <svg class="icon icon-benefits-icon services__item-ico">
+                    <use xlink:href="images/dest/sprite.svg#benefits-icon"></use>
+                  </svg>
+              <h4 class="services__item-title">А что еще?</h4>
+              <p class="services__item-descr">Грамоты, открытки, приглашения, конверты, блокноты, пластиковые карты, сверление, ламинация.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="bg">
+          <div class="benefits-tr">
+            <image src="images/dest/icons/benefits-tr.svg"></image>
+            <image src="images/dest/icons/dots.svg"></image>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="benefits__title section__title">
+            <h3>Как мы работаем</h3><span>?</span>
+          </div>
+          <div class="benefits__items">
+            <div class="benefits__item"><span class="benefits__item-abs">1</span>
+              <h4 class="benefits__item-title">Передаешь информацию по заказу</h4>
+              <p class="benefits__item-descr">Указываешь материал, размер, количество, с одной или с двух сторон печать. И прикрепляешь файл для печати. Мы сами его проверим!</p>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__item-abs">2</div>
+              <h4 class="benefits__item-title">Мы рассчитываем</h4>
+              <p class="benefits__item-descr">Ты оплачиваешь</p>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__item-abs">3</div>
+              <h4 class="benefits__item-title">Готово!</h4>
+              <p class="benefits__item-descr">Забираешь готовый заказ на нашем производстве.</p>
+            </div>
+          </div>
+          <button class="benefits__cta benefits__btn" type="button" onclick="location.href='https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать';">Заказывай</button>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="bg">
+          <div class="faq_r">
+            <image src="images/dest/icons/faq-r.svg"></image>
+          </div>
+          <div class="faq_lb">
+            <image src="images/dest/icons/faq-lb.svg"></image>
+            <image src="images/dest/icons/dots.svg"></image>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="faq__title section__title">
+            <h3>Частые вопросы</h3><span>?</span>
+          </div>
+          <div class="faq__items">
+            <div class="faq__item">
+              <div class="faq__q">
+                <h4>Можно ли посмотреть/пощупать материалы?</h4>
+              </div>
+              <div class="faq__a">
+                <p>Да, конечно, приезжайте.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__q">
+                <h4>На каком оборудовании печатаете?</h4>
+              </div>
+              <div class="faq__a">
+                <p>Спасибо за вопрос, Xerox versant 180 со встроенным спектрофотометров, контролирующий цвет печатного оттиска. В общем, зверь, а не машина!</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__q">
+                <h4>Доставка по городу?</h4>
+              </div>
+              <div class="faq__a">
+                <p>Можем отправить Яндекс курьером.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__q">
+                <h4>Доставка по России?</h4>
+              </div>
+              <div class="faq__a">
+                <p>Да, можем отправить транспортной компанией по городам России.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__printer"><span class="faq__printer-abs">наш зверь</span><img class="faq__printer-content" src="images/src/services.webp"></div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="wrapper">
+          <div class="contacts__map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A983d3ef20782be9285240e166c0ddb5409ba4632f9c6ba87685d28722b00e109&amp;amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+          <div class="contacts__content">
+            <h4 class="contacts__title">Контакты:</h4>
+            <div class="contacts__items"><a class="contacts__link contacts__addres" href="#">г.Санкт-Петербург, Шоссе Революции, 31 </a><a class="contacts__link contacts__phone" href="tel:330-03-04">330-03-04</a><a class="contacts__link contacts__email" href="mailto: reprint.spb@gmail.com"> reprint.spb@gmail.com</a></div>
+            <button class="contacts__btn" type="button" onclick="location.href='https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать';">Закажи сейчас через Вотсап</button>
+          </div>
+        </div>
+      </section>
+      <script src="js/app.min.js"></script>
     </main>
-    <footer>
-      <p>Copyright(c)</p>
-    </footer>
   </body>
 </html>

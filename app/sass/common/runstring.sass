@@ -1,0 +1,90 @@
+.runstring
+  position: relative
+  width: auto
+  height: calc(60 / 320) * 100vw
+  left: 0
+  &:before
+    content: ''
+    position: absolute
+    left: 15%
+    top: 0
+    background-image: url('../images/dest/icons/ring.svg')
+    background-repeat: no-repeat
+    background-size: cover
+    width: calc(60 / 320) * 100vw
+    height: calc(60 / 320) * 100vw
+  &__content
+    animation: runstring 10s infinite linear
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    white-space: nowrap
+    height: calc(60 / 320) * 100vw
+    width: 100%
+    position: relative
+    left: 0
+    padding-left: 150%
+    gap: calc(25 / 320) * 100vw
+    p
+      position: relative
+      text-transform: uppercase
+      font-size: calc(12 / 320) * 100vw
+      font-weight: 900
+      &:before
+        content: ''
+        position: absolute
+        right: calc(-15 / 320) * 100vw
+        top: calc(4 / 320) * 100vw
+        border-radius: 50%
+        width: calc(5 / 320) * 100vw
+        height: calc(5 / 320) * 100vw
+        background-color: magenta
+
+
+
+
+  @include media-laptop
+    position: relative
+    width: auto
+    height: calc(220 / 1920) * 100vw
+    left: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 15%
+      top: 0
+      background-image: url('../images/dest/icons/ring.svg')
+      width: calc(220 / 1920) * 100vw
+      height: calc(220 / 1920) * 100vw
+    &__content
+      animation: runstring 10s infinite linear
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      white-space: nowrap
+      height: calc(220 / 1920) * 100vw
+      width: 100%
+      position: relative
+      left: 0
+      padding-left: 150%
+      gap: calc(45 / 1920) * 100vw
+      p
+        position: relative
+        text-transform: uppercase
+        font-size: calc(32 / 1920) * 100vw
+        font-weight: 900
+        &:before
+          content: ''
+          position: absolute
+          right: -30px
+          top: calc(8 / 1920) * 100vw
+          border-radius: 50%
+          width: calc(15 / 1920) * 100vw
+          height: calc(15 / 1920) * 100vw
+          background-color: magenta
