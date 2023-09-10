@@ -3,15 +3,15 @@
     min-width: 0px !important
   .slider
     &-for
-      width: 1500px
+      width: calc(1636 / 1920) *100vw
       margin: 0 auto
       margin-bottom: 5vw
       img
         margin: 0 auto
-        max-width: 1365px
-        max-height: 910px
+        max-width: calc(1365 / 1920) *100vw
+        max-height: calc(910 / 1920) *100vw
     &-nav
-      width: 1500px
+      width: calc(1636 / 1920) *100vw
       margin: 0 auto
       display: -webkit-flex
       display: -ms-flex
@@ -19,18 +19,18 @@
       flex-direction: row
       justify-content: space-between
       align-items: center
-      gap: 28px
+      gap: calc(28 / 1920) *100vw
       img
         margin: 0 auto
-        width: 200px
-        margin: 0 20px
+        width: calc(200 / 1920) *100vw
+        margin: 0 calc(20 / 1920) *100vw
       div
         div
           div
             img
               border: 2px solid $yellow
-              max-width: 240px
-              max-height: 160px
+              max-width: calc(240 / 1920) *100vw
+              max-height: calc(160 / 1920) *100vw
             &.slick-active
               img
                 border: 2px solid $magenta
