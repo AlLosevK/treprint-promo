@@ -1,0 +1,44 @@
+.sliders
+  button
+    min-width: 0px !important
+  .slider
+    &-for
+      width: 1500px
+      margin: 0 auto
+      margin-bottom: 5vw
+      img
+        margin: 0 auto
+        max-width: 1365px
+        max-height: 910px
+    &-nav
+      width: 1500px
+      margin: 0 auto
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      gap: 28px
+      img
+        margin: 0 auto
+        width: 200px
+        margin: 0 20px
+      div
+        div
+          div
+            img
+              border: 2px solid $yellow
+              max-width: 240px
+              max-height: 160px
+            &.slick-active
+              img
+                border: 2px solid $magenta
+
+.slick
+  &-arrow
+    width: 84px
+    height: 84px
+    background-color: $yellow
+    &:before
+      color: $magenta

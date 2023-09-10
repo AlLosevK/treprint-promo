@@ -1,0 +1,38 @@
+.delivery
+  .wrapper
+    width: 1250px
+  &__items
+    width: 100%
+    display: grid
+    grid-template-rows: 95px 95px
+    grid-template-columns: 456px 595px
+    gap: 15px 200px
+    position: relative
+  &__item
+    position: relative
+    &:nth-child(2n)
+      grid-row: 2
+      grid-column: 2
+    &:nth-child(2n+1)
+      &:before
+        content: ''
+        background-image: url('../images/dest/icons/services-worm.svg')
+        background-size: 100% 138%
+        background-repeat: no-repeat
+        position: absolute
+        width: calc(21 / 1920) * 100vw
+        height: calc(161 / 1920) * 100vw
+        // top: 15%
+        // left: 50%
+        top: 0
+        right: 0
+        transform: translate(5.8vw, -3%)
+  &__title
+    font-size: 32px
+    font-weight: bold
+    margin-bottom: 20px
+  &__subtitle
+    text-transform: uppercase
+    font-size: 30px
+    line-height: 140%
+    font-weight: 300

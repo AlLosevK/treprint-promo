@@ -1,0 +1,130 @@
+.equipment
+  position: relative
+  .wrapper
+    position: relative
+    z-index: 100
+  .bg
+    position: absolute
+    width: 100vw
+    height: 100%
+    z-index: 101
+  &_lb
+    position: absolute
+    top: calc(328 / 320) * 100vw
+    left: calc(-91 / 320) * 100vw
+    z-index: 100
+    width: calc(186 / 320) * 100vw
+    height: calc(106 / 320) * 100vw
+    img
+      &:last-child
+        width: calc(42 / 320) * 100vw
+        height: calc(16 / 320) * 100vw
+        position: absolute
+        top: calc(-11 / 320) * 100vw
+        right: calc(44 / 320) * 100vw
+        transform: rotate(90deg)
+  .wrapper
+  &__title
+  &__printer
+    margin: 0 auto
+    display: block
+    margin-top: calc(145 / 320) * 100vw
+    position: relative
+    z-index: 10
+    &-abs
+      position: absolute
+      top: calc(-75 / 320) * 100vw
+      left: calc(75 / 320) * 100vw
+      z-index: 1000
+      font-size: calc(11 / 320) * 100vw
+      line-height: 100%
+      text-transform: uppercase
+      font-weight: 300
+      &:after
+        content: ''
+        background-image: url('../images/dest/icons/banner-btn-arr.svg')
+        background-size: contain
+        background-repeat: no-repeat
+        position: absolute
+        top: calc(20 / 320) * 100vw
+        left: calc(-8 / 320) * 100vw
+        // transform: rotateX(180deg) translateZ(-1px)
+        width: calc(95 / 320) * 100vw
+        height: calc(26 / 320) * 100vw
+
+
+  @include media-laptop
+    .wrapper
+      z-index: 110
+    .bg
+      z-index: 100
+      .equipment_lb
+        top: 13%
+        left: calc(-333 / 1920) * 100vw
+        z-index: 99
+        width: calc(778 / 1920) * 100vw
+        height: calc(445 / 1920) * 100vw
+        img
+          &:last-child
+            position: absolute
+            top: 0
+            right: calc(230 / 1920) * 100vw
+            width: calc(135 / 1920) * 100vw
+            height: calc(50 / 1920) * 100vw
+            transform: rotate(90deg)
+    &__title
+      margin-bottom: 132px
+    &__content
+      margin-bottom: 240px
+    &__subtitle
+      font-size: 30px
+      font-style: normal
+      font-weight: 300
+      line-height: 120%
+      text-transform: uppercase
+      margin-bottom: 55px
+      position: relative
+      &:before
+        content: ''
+        background-image: url('../images/dest/icons/services-worm.svg')
+        background-size: contain
+        background-repeat: no-repeat
+        position: absolute
+        width: calc(0 / 320) * 100vw
+        height: calc(0 / 320) * 100vw
+        bottom: 0
+        left: 0%
+        transform: rotate(90deg) translate(150px, -113px)
+        height: calc(245 / 1920) * 100vw
+        width: calc(21 / 1920) * 100vw
+    &__text
+      font-size: 32px
+      font-weight: 4000
+      line-height: 112.5%
+      width: 65%
+    &__printer
+      margin-top: 0
+      img
+        width: 1024px
+      &-abs
+        position: absolute
+        left: auto
+        right: calc(-210 / 1920) * 100vw
+        top: calc(-150 / 1920) * 100vw
+        font-size: calc(30 / 1920) * 100vw
+        line-height: 100%
+        text-transform: uppercase
+        font-weight: 300
+        width: calc(261 / 1920) * 100vw
+        &:after
+          content: ''
+          background-image: url('../images/dest/icons/banner-btn-arr.svg')
+          background-size: 100%
+          background-repeat: no-repeat
+          position: absolute
+          top: auto
+          bottom: calc(-109 / 1920) * 100vw
+          left: calc(-100 / 1920) * 100vw
+          transform: rotate(40deg) rotateX(180deg)
+          width: calc(250 / 1920) * 100vw
+          height: calc(83 / 1920) * 100vw

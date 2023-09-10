@@ -78,6 +78,32 @@
 
   @include media-laptop
     padding: 0
+    &__promo
+      width: 100%
+      background-color: $yellow
+      padding: 60px 0
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin-bottom: 120px
+      &-title
+        font-size: 32px
+        font-weight: bold
+        margin: 0 auto
+        margin-bottom: 25px
+        span
+          color: $magenta
+      &-text
+        font-size: 30px
+        line-height: 42px
+        text-transform: uppercase
+        font-weight: 300
+        margin: 0 auto
+        span
+          color: $magenta
     .wrapper
       width: 100vw
       grid-template-columns: 50% 50%
