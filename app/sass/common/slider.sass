@@ -1,44 +1,114 @@
 .sliders
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
   button
     min-width: 0px !important
   .slider
     &-for
-      width: calc(1636 / 1920) *100vw
-      margin: 0 auto
-      margin-bottom: 5vw
+      width: calc(250 / 320) *100vw
+      margin-bottom: calc(24 / 320) *100vw
       img
+        max-width: calc(250 / 320) *100vw
+        max-height: calc(186 / 320) *100vw
         margin: 0 auto
-        max-width: calc(1365 / 1920) *100vw
-        max-height: calc(910 / 1920) *100vw
     &-nav
-      width: calc(1636 / 1920) *100vw
-      margin: 0 auto
-      display: -webkit-flex
-      display: -ms-flex
-      display: flex
-      flex-direction: row
-      justify-content: space-between
-      align-items: center
-      gap: calc(28 / 1920) *100vw
+      width: calc(250 / 320) *100vw
+      // .slick-current
+        margin: 0 calc(14 / 320) * 100vw
+        // min-width: calc(75 / 320) *100vw
       img
+        // width: auto
+        // max-width: calc(75 / 320) *100vw
         margin: 0 auto
-        width: calc(200 / 1920) *100vw
-        margin: 0 calc(20 / 1920) *100vw
-      div
-        div
-          div
+        height: calc(50 / 320) *100vw
+      .slick
+        &-slide
+          // width: auto !important
+        &-current
+          img
+            border: 2px solid $magenta
+
+
+
+
+
+
+
+
+
+  @include media-laptop
+    .slider
+      &-for
+        width: calc(1636 / 1920) *100vw
+        margin: 0 auto
+        margin-bottom: 5vw
+        img
+          max-width: calc(1365 / 1920) *100vw
+          max-height: calc(910 / 1920) *100vw
+      &-nav
+        width: calc(1636 / 1920) *100vw
+        margin: 0 auto
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        gap: calc(28 / 1920) *100vw
+        img
+          width: calc(200 / 1920) *100vw
+          margin: 0 calc(20 / 1920) *100vw
+        .slick-slide
+          img
+            max-width: calc(240 / 1920) *100vw
+            max-height: calc(160 / 1920) *100vw
+          .slick-current
             img
-              border: 2px solid $yellow
-              max-width: calc(240 / 1920) *100vw
-              max-height: calc(160 / 1920) *100vw
-            &.slick-active
-              img
-                border: 2px solid $magenta
+              border: 2px solid $magenta
 
 .slick
-  &-arrow
-    width: 84px
-    height: 84px
-    background-color: $yellow
-    &:before
-      color: $magenta
+  &-slide
+    img
+      border: 2px solid $yellow
+  &-dots
+    width: calc(70 / 320) *100vw
+    left: 50%
+    transform: translate(-50%)
+    bottom: -15px
+    li
+      width: calc(5 / 320) *100vw
+      height: calc(5 / 320) *100vw
+      margin: 0 calc(2.5 / 320) *100vw
+      button
+        width: 100%
+        height: 100%
+        padding: 0
+        margin: 0
+        background-color: #fff
+        border: 1px solid $magenta
+        &:before
+          display: none
+      &.slick-active
+        button
+          background-color: $magenta
+
+
+
+
+
+
+  @include media-laptop
+    &-arrow
+      width: calc(74 / 1920) *100vw
+      height: calc(74 / 1920) *100vw
+      background-color: $yellow
+      z-index: 1
+      &:before
+        color: $magenta
+    // &-current
+    //   img
+    //     border: 2px solid $magenta

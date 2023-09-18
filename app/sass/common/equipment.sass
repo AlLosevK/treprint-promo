@@ -1,16 +1,15 @@
 .equipment
   position: relative
+  padding-bottom: 0
   .wrapper
     position: relative
-    z-index: 100
   .bg
     position: absolute
     width: 100vw
     height: 100%
-    z-index: 101
   &_lb
     position: absolute
-    top: calc(328 / 320) * 100vw
+    top: calc(128 / 320) * 100vw
     left: calc(-91 / 320) * 100vw
     z-index: 100
     width: calc(186 / 320) * 100vw
@@ -28,17 +27,18 @@
   &__printer
     margin: 0 auto
     display: block
-    margin-top: calc(145 / 320) * 100vw
+    margin-top: calc(138 / 320) * 100vw
     position: relative
     z-index: 10
     &-abs
       position: absolute
-      top: calc(-75 / 320) * 100vw
-      left: calc(75 / 320) * 100vw
+      width: calc(70 / 320) * 100vw
+      top: calc(-92 / 320) * 100vw
+      right: calc(62 / 320) * 100vw
       z-index: 1000
-      font-size: calc(11 / 320) * 100vw
+      font-size: calc(9 / 320) * 100vw
       line-height: 100%
-      text-transform: uppercase
+      // text-transform: uppercase
       font-weight: 300
       &:after
         content: ''
@@ -46,20 +46,28 @@
         background-size: contain
         background-repeat: no-repeat
         position: absolute
-        top: calc(20 / 320) * 100vw
-        left: calc(-8 / 320) * 100vw
-        // transform: rotateX(180deg) translateZ(-1px)
+        top: calc(50 / 320) * 100vw
+        left: calc(15 / 320) * 100vw
+        transform: rotateX(180deg) rotateZ(-40deg)
         width: calc(95 / 320) * 100vw
         height: calc(26 / 320) * 100vw
+  &__content
+    margin-top: 50px
+    margin-left: 55px
+  &__subtitle
+    font-size: 11px
+    font-weight: 300
+    margin-bottom: 20px
+  &__text
+    font-size: 9px
+    font-weight: 400
 
 
   @include media-laptop
     .wrapper
-      z-index: 110
     .bg
-      z-index: 100
       .equipment_lb
-        top: 13%
+        top: 23%
         left: calc(-333 / 1920) * 100vw
         z-index: 99
         width: calc(778 / 1920) * 100vw

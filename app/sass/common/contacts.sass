@@ -1,9 +1,35 @@
 .contacts
   padding-bottom: 0
+  &__promo
+    width: 100%
+    background-color: $yellow
+    padding: calc(18 / 320) * 100vw 0
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: calc(27 / 320) * 100vw
+    &-title
+      font-size: calc(9 / 320) * 100vw
+      font-weight: bold
+      margin: 0 auto
+      margin-bottom: calc(11 / 320) * 100vw
+      span
+        color: $magenta
+    &-text
+      font-size: calc(11 / 320) * 100vw
+      text-transform: uppercase
+      font-weight: 300
+      margin: 0 auto
+      width: calc(223 / 320) * 100vw
+      text-align: center
+      span
+        color: $magenta
   .wrapper
     display: grid
     position: relative
-    z-index: 100
     grid-template-columns: 1fr
   &__title
     position: relative
@@ -79,31 +105,14 @@
   @include media-laptop
     padding: 0
     &__promo
-      width: 100%
-      background-color: $yellow
       padding: 60px 0
-      display: -webkit-flex
-      display: -ms-flex
-      display: flex
-      flex-direction: column
-      justify-content: center
-      align-items: center
       margin-bottom: 120px
       &-title
         font-size: 32px
-        font-weight: bold
-        margin: 0 auto
         margin-bottom: 25px
-        span
-          color: $magenta
       &-text
         font-size: 30px
         line-height: 42px
-        text-transform: uppercase
-        font-weight: 300
-        margin: 0 auto
-        span
-          color: $magenta
     .wrapper
       width: 100vw
       grid-template-columns: 50% 50%

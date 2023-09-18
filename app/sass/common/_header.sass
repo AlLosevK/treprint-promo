@@ -51,12 +51,35 @@
     &-hover
       display: none
     &:hover
-      .header__whatsup
+      .header
+        &__whatsup
+          &-ico
+            display: none
+          &-hover
+            display: block
+        &__tg
+          &-ico
+            display: none
+          &-hover
+            display: block
+  &__tg
+    grid-row: 2/3
+    grid-column: 2/3
+    width: auto
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    gap: calc(20 / 320) * 100vw
+    &-hover
+      display: none
+    &:hover
+      .header__tg-ico
         display: none
-      .header__whatsup-hover
+      .header__tg-hover
         display: block
-    &-content
-
     .icon
       width: calc(23 / 320) * 100vw
       height: calc(23 / 320) * 100vw
@@ -160,4 +183,3 @@
   position: fixed
   top: 0
   width: 100%
-  mt-

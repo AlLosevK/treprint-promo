@@ -3,13 +3,15 @@ header.header#myHeader
     .header__content
       .header__logo
     a(href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать").header__whatsup
+      +icon('tg', 'header__tg-ico')
+      +icon('tg-hover', 'header__tg-hover', 'header__tg')
       .header__whatsup-content
         p Остались вопросы?
-        p Пиши нам в What's App!
+        p Пиши нам!
       //- img(src="images/dest/icons/whatsup.svg" alt="logo whatsup")
       //- .icon
       //-   //- include ../../images/dest/icons/whatsup.svg
-      +icon('whatsup', 'header__whatsup')
+      +icon('whatsup', 'header__whatsup-ico')
       +icon('whatsup-hover', 'header__whatsup-hover', 'header__whatsup')
     .header__contacts
       .header__phone
