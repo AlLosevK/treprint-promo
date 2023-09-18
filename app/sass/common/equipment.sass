@@ -52,14 +52,26 @@
         width: calc(95 / 320) * 100vw
         height: calc(26 / 320) * 100vw
   &__content
-    margin-top: 50px
-    margin-left: 55px
+    margin-top: calc(50 / 320) *100vw
+    margin-left: calc(50 / 320) *100vw
   &__subtitle
-    font-size: 11px
+    font-size: calc(11 / 320) *100vw
     font-weight: 300
-    margin-bottom: 20px
+    margin-bottom: calc(20 / 320) *100vw
+    position: relative
+    &:before
+      content: ''
+      background-image: url('../images/dest/icons/services-worm.svg')
+      background-size: 100% 100%
+      background-repeat: no-repeat
+      position: absolute
+      width: calc(8 / 320) * 100vw
+      height: calc(93 / 320) * 100vw
+      bottom: 0
+      left: 0%
+      transform: rotate(90deg) translate(14.6875vw, -14.6875vw)
   &__text
-    font-size: 9px
+    font-size: calc(9 / 320) *100vw
     font-weight: 400
 
 
@@ -81,39 +93,31 @@
             height: calc(50 / 1920) * 100vw
             transform: rotate(90deg)
     &__title
-      margin-bottom: 132px
+      margin-bottom: calc(132 / 1920) *100vw
     &__content
-      margin-bottom: 240px
+      margin-bottom: calc(240 / 1920) *100vw
     &__subtitle
-      font-size: 30px
+      font-size: calc(30 / 1920) *100vw
       font-style: normal
       font-weight: 300
       line-height: 120%
       text-transform: uppercase
-      margin-bottom: 55px
-      position: relative
+      margin-bottom: calc(55 / 1920) *100vw
       &:before
-        content: ''
-        background-image: url('../images/dest/icons/services-worm.svg')
-        background-size: contain
-        background-repeat: no-repeat
-        position: absolute
-        width: calc(0 / 320) * 100vw
-        height: calc(0 / 320) * 100vw
         bottom: 0
         left: 0%
-        transform: rotate(90deg) translate(150px, -113px)
+        transform: rotate(90deg) translate(7.8125vw, -5.88vw)
         height: calc(245 / 1920) * 100vw
         width: calc(21 / 1920) * 100vw
     &__text
-      font-size: 32px
+      font-size: calc(32 / 1920) *100vw
       font-weight: 4000
       line-height: 112.5%
       width: 65%
     &__printer
       margin-top: 0
       img
-        width: 1024px
+        width: calc(1024 / 1920) *100vw
       &-abs
         position: absolute
         left: auto

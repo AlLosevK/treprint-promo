@@ -1,6 +1,6 @@
 .delivery
   padding: 0
-  padding-top: 40px
+  padding-top: calc(40 / 320) *100vw
   .wrapper
     width: calc(250 / 320) *100vw
   &__items
@@ -13,13 +13,13 @@
     align-items: stretch
     gap: calc(47 / 320) *100vw calc(200 / 320) *100vw
     position: relative
-    margin-top: 32px
+    margin-top: calc(32 / 320) *100vw
   &__item
     position: relative
-    width: 155px
+    width: calc(155 / 320) *100vw
     align-self: flex-end
     &:nth-child(2n+1)
-      width: 165px
+      width: calc(165 / 320) *100vw
       align-self: flex-start
       &:before
         content: ''
@@ -31,7 +31,7 @@
         height: calc(93 / 320) * 100vw
         // top: 15%
         // left: 50%
-        top: 10px
+        top: calc(10 / 320) *100vw
         right: 35%
         // transform: translate(5.8vw, -3%)
         transform: rotateX(180deg) rotateZ(90deg)

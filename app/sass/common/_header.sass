@@ -21,9 +21,9 @@
         grid-row: 1/2
   .wrapper
     display: grid
-    grid-template-columns: auto calc(150 / 320) * 100vw
+    grid-template-columns: auto calc(213 / 320) * 100vw
     grid-template-rows: calc(10 / 320) * 100vw calc(23 / 320) * 100vw
-    gap: calc(14 / 320) * 100vw
+    gap: calc(12 / 320) * 100vw
   &__content
     grid-row: 2/3
     grid-column: 1/2
@@ -47,7 +47,7 @@
     flex-direction: row
     justify-content: space-between
     align-items: center
-    gap: calc(20 / 320) * 100vw
+    gap: calc(9 / 320) * 100vw
     &-ico
       font-size: calc(20 / 320) * 100vw
     &-hover
@@ -64,6 +64,11 @@
             display: none
           &-hover
             display: block
+    &-content
+      width: auto
+      height: auto
+      min-width: calc(150 / 320) *100vw
+      // padding-right: calc(58 / 320) * 100vw
   &__tg
     grid-row: 2/3
     grid-column: 2/3
@@ -75,7 +80,7 @@
     justify-content: space-between
     align-items: center
     gap: calc(20 / 320) * 100vw
-    font-size: calc(20 / 320) * 100vw
+    font-size: calc(9 / 320) * 100vw
     &-ico
       font-size: calc(20 / 320) * 100vw
     &-hover
@@ -128,6 +133,18 @@
 
   @include media-laptop
     padding: calc(10 / 1920) * 100vw 0
+    &.sticky
+      .wrapper
+      .header
+        &__contacts
+          display: -webkit-flex
+          display: -ms-flex
+          display: grid
+        &__content
+        &__whatsup
+          gap: calc(30 / 1920) * 100vw
+          &-content
+            min-width: calc(276 / 1920) * 100vw
     .wrapper
       display: -webkit-flex
       display: -ms-flex
@@ -156,9 +173,10 @@
       &:before
         display: none
     &__whatsup
-      gap: calc(64 / 1920) * 100vw
+      gap: calc(30 / 1920) * 100vw
       &-content
-        gap: 30px
+        gap: calc(30 / 1920) *100vw
+        min-width: calc(272 / 1920) * 100vw
       .icon
         // font-size: 15px
         // line-height: 100%
