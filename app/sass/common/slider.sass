@@ -11,30 +11,47 @@
     &-for
       width: calc(250 / 320) *100vw
       margin-bottom: calc(24 / 320) *100vw
-      img
+      picture
+        display: block
         max-width: calc(250 / 320) *100vw
         max-height: calc(186 / 320) *100vw
         margin: 0 auto
+        img
+          width: auto
+          max-height: calc(186 / 320) *100vw
+          margin: 0 auto
     &-nav
       width: calc(250 / 320) *100vw
       // .slick-current
         margin: 0 calc(14 / 320) * 100vw
         // min-width: calc(75 / 320) *100vw
-      img
+      picture
+        display: block
         // width: auto
         // max-width: calc(75 / 320) *100vw
         margin: 0 auto
-        height: calc(50 / 320) *100vw
+        height: calc(50 / 320) * 100vw
+        img
+          // width: 100%
+          max-height: calc(50 / 320) * 100vw
+          margin: 0 auto
       .slick
         &-slide
           // width: auto !important
         &-current
-          img
-            border: 2px solid $magenta
+          picture
+            img
+              border: 2px solid $magenta
 
 
 
 
+
+  @include media-custom(600px)
+    .slider
+      &-nav
+        .slick-track
+          transform: none !important
 
 
 
@@ -52,13 +69,7 @@
       &-nav
         width: calc(1636 / 1920) *100vw
         margin: 0 auto
-        display: -webkit-flex
-        display: -ms-flex
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
-        gap: calc(28 / 1920) *100vw
+        // gap: calc(28 / 1920) *100vw
         img
           width: calc(200 / 1920) *100vw
           margin: 0 calc(20 / 1920) *100vw
@@ -74,11 +85,34 @@
   &-slide
     img
       border: 2px solid $yellow
+  &-arrow
+    &:before
+      display: block
+      width: calc(36 / 1920) *100vw
+      height: calc(22 / 1920) *100vw
+      position: absolute
+      transform: translate(-50%, -50%)
+      top: 50%
+      left: 50%
+  &-prev
+    &:before
+      content: ''
+      background-image: url('../images/dest/icons/slider-arrow-prev.svg')
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: 0 0
+  &-next
+    &:before
+      content: ''
+      background-image: url('../images/dest/icons/slider-arrow-next.svg')
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: 0 0
   &-dots
     width: calc(70 / 320) *100vw
     left: 50%
     transform: translate(-50%)
-    bottom: -15px
+    bottom: -2vw
     li
       width: calc(5 / 320) *100vw
       height: calc(5 / 320) *100vw
@@ -109,6 +143,7 @@
       z-index: 1
       &:before
         color: $magenta
+        font-family: none
     // &-current
     //   img
     //     border: 2px solid $magenta

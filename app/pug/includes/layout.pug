@@ -3,11 +3,18 @@ html(lang="ru")
    block head
       head
           meta(charset="utf-8")
+          meta(name="viewport" content="width=device-width, initial-scale=1")
           title DailyPrint - Цифровая печать
-          meta(content="width=device-width, initial-scale=1" name="viewport")
           meta(content="ie=edge" http-equiv="x-ua-compatible")
           link(rel="stylesheet" href="css/app.min.css")
+          //- base(href="https://cifra.treprint.ru/test/")
       body
+          script
+            include metrika.js
+            
+          noscript
+            div
+              img(src="https://mc.yandex.ru/watch/92170622" style="position:absolute; left:-9999px;" alt="")
       
           include svg.pug
           block header

@@ -38,6 +38,13 @@ var svgmin = 		require('gulp-svgmin');
 var	cheerio = 	require('gulp-cheerio');
 var	replace = 	require('gulp-replace');
 
+//webp
+const webp = require('gulp-webp');
+const cache = require('gulp-cache');
+const imagemin = require('gulp-imagemin');
+const pngquant = require('imagemin-pngquant');
+const jpegrecompress = require('imagemin-jpeg-recompress');
+
 // Определяем логику работы Browsersync
 function browsersync() {
 	browserSync.init({ // Инициализация Browsersync
@@ -95,6 +102,13 @@ async function images() {
 			}
 		}
 	)
+}
+
+async function webpf() {
+  return src(['app/images/src/**/*.*', '!app/images/src/**/*.svg'])
+    .pipe(webp())
+		.pipe(dest('app/images/dest/')) // Выгружаем готовый файл в папку назначения
+		.pipe(browserSync.stream()) // Триггерим Browsersync для обновления страницы
 }
 
 function cleanimg() {
@@ -170,6 +184,9 @@ function startwatch() {
 	// Мониторим папку-источник изображений и выполняем images(), если есть изменения
 	watch('app/images/src/**/*', images);
 
+	// Мониторим папку-источник изображений и выполняем images(), если есть изменения
+	watch('app/images/src/**/*.*', webpf);
+
 }
 
 // Экспортируем функцию browsersync() как таск browsersync. Значение после знака = это имеющаяся функция.
@@ -184,6 +201,9 @@ exports.styles = styles;
 // Экспорт функции images() в таск images
 exports.images = images;
 
+// Экспорт функции webp() в таск webp
+exports.webp = webpf;
+
 // Экспорт функции svgSprite() в таск images
 exports.svgsprite = svgsprite;
 
@@ -191,7 +211,7 @@ exports.svgsprite = svgsprite;
 exports.cleanimg = cleanimg;
 
 // Создаём новый таск "build", который последовательно выполняет нужные операции
-exports.build = series(cleandist, styles, scripts, images, buildcopy);
+exports.build = series(cleandist, styles, scripts, webpf, images, buildcopy);
 
 // Экспортируем дефолтный таск с нужным набором функций
-exports.default = parallel(pugf, svgsprite, styles, scripts, browsersync, startwatch);
+exports.default = parallel(pugf, svgsprite, webpf, styles, scripts, browsersync, startwatch);

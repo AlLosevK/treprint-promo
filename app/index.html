@@ -2,33 +2,40 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DailyPrint - Цифровая печать</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="css/app.min.css">
   </head>
   <body>
+    <script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(95333555, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/92170622" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
     <header class="header" id="myHeader">
       <div class="wrapper">
         <div class="header__content">
           <div class="header__logo"></div>
-        </div><a class="header__whatsup" href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать">
+        </div>
+        <div class="header__whatsup">
           <div class="header__whatsup-content">
             <p>Остались вопросы?</p>
             <p>Пиши нам!</p>
-          </div>
-              <svg class="icon icon-whatsup header__whatsup-ico">
-                <use xlink:href="images/dest/sprite.svg#whatsup"></use>
-              </svg>
-              <svg class="icon icon-whatsup-hover header__whatsup-hover">
-                <use xlink:href="images/dest/sprite.svg#whatsup-hover"></use>
-              </svg>
-              <svg class="icon icon-tg header__tg-ico">
-                <use xlink:href="images/dest/sprite.svg#tg"></use>
-              </svg>
-              <svg class="icon icon-tg-hover header__tg-hover">
-                <use xlink:href="images/dest/sprite.svg#tg-hover"></use>
-              </svg></a>
+          </div><a href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать" data-social="wa"></a><a href="https://t.me/+79219580826" data-social="tg"></a>
+        </div>
         <div class="header__contacts">
           <div class="header__phone"><a href="#">330 - 03 - 04</a></div>
           <div class="header__email"><a href="#">reprint.spb@gmail.com</a></div>
@@ -58,7 +65,9 @@
             <h2>100 листовок А5</h2><span>800 ₽</span>
           </div>
           <p class="banner__descr">печатаем на бумаге, картоне <br>и самоклеющихся материалах</p>
-          <button class="banner__btn" type="button" onclick="location.href='https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать';">Рассчитать заказ</button>
+          <button class="banner__btn buttonSocials" type="button"> <span>Рассчитать заказ</span><a href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать">
+              <div data-social="wa"></div></a><a href="https://t.me/+79219580826">
+              <div data-social="tg"></div></a></button>
         </div>
       </section>
       <section class="services">
@@ -123,22 +132,99 @@
       </section>
       <section class="sliders">
         <div class="slider-for">
-          <div><img src="images/dest/services-1.jpg"></div>
-          <div><img src="images/dest/services-2.jpg"></div>
-          <div><img src="images/dest/services-3.jpg"></div>
-          <div><img src="images/dest/services-4.jpg"></div>
-          <div><img src="images/dest/services-5.jpg"></div>
-          <div><img src="images/dest/services-6.jpg"></div>
-          <div><img src="images/dest/services-7.jpg"></div>
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-1-m.webp" media="(max-width: 400px)">
+              <source type="image/webp" srcset="images/dest/services-1-l.webp" media="(max-width: 720px)">
+              <source type="image/webp" srcset="images/dest/services-1-lg.webp" media="(max-width: 1110px)">
+              <source type="image/webp" srcset="images/dest/services-1.webp" media="(min-width: 1110px)"><img src="images/dest/services-1-l.png" alt="Визитки. Оливия">
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-2-m.webp" media="(max-width: 400px)">
+              <source type="image/webp" srcset="images/dest/services-2-l.webp" media="(max-width: 720px)">
+              <source type="image/webp" srcset="images/dest/services-2-lg.webp" media="(max-width: 1110px)">
+              <source type="image/webp" srcset="images/dest/services-2.webp" media="(min-width: 1110px)"><img src="images/dest/services-2-l.png" alt="Наклейки. Глянец.">
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-3-m.webp" media="(max-width: 400px)">
+              <source type="image/webp" srcset="images/dest/services-3-l.webp" media="(max-width: 720px)">
+              <source type="image/webp" srcset="images/dest/services-3-lg.webp" media="(max-width: 1110px)">
+              <source type="image/webp" srcset="images/dest/services-3.webp" media="(min-width: 1110px)"><img src="images/dest/services-3-l.png" alt="Наклейки. Урал">
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-4-m.webp" media="(max-width: 400px)">
+              <source type="image/webp" srcset="images/dest/services-4-l.webp" media="(max-width: 720px)">
+              <source type="image/webp" srcset="images/dest/services-4-lg.webp" media="(max-width: 1110px)">
+              <source type="image/webp" srcset="images/dest/services-4.webp" media="(min-width: 1110px)"><img src="images/dest/services-4-l.png" alt="Брошура">
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-5-m.webp" media="(max-width: 400px)">
+              <source type="image/webp" srcset="images/dest/services-5-l.webp" media="(max-width: 720px)">
+              <source type="image/webp" srcset="images/dest/services-5-lg.webp" media="(max-width: 1110px)">
+              <source type="image/webp" srcset="images/dest/services-5.webp" media="(min-width: 1110px)"><img src="images/dest/services-5-l.png" alt="Календарь трио">
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-6-m.webp" media="(max-width: 400px)">
+              <source type="image/webp" srcset="images/dest/services-6-l.webp" media="(max-width: 720px)">
+              <source type="image/webp" srcset="images/dest/services-6-lg.webp" media="(max-width: 1110px)">
+              <source type="image/webp" srcset="images/dest/services-6.webp" media="(min-width: 1110px)"><img src="images/dest/services-6-l.png" alt="Читательский билет">
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-7-m.webp" media="(max-width: 400px)">
+              <source type="image/webp" srcset="images/dest/services-7-l.webp" media="(max-width: 720px)">
+              <source type="image/webp" srcset="images/dest/services-7-lg.webp" media="(max-width: 1110px)">
+              <source type="image/webp" srcset="images/dest/services-7.webp" media="(min-width: 1110px)"><img src="images/dest/services-7-l.png" alt="Бирка для одежды">
+            </picture>
+          </div>
         </div>
         <div class="slider-nav">
-          <div data-slide-nmbr="0"><img src="images/dest/services-1.jpg"></div>
-          <div data-slide-nmbr="1"><img src="images/dest/services-2.jpg"></div>
-          <div data-slide-nmbr="2"><img src="images/dest/services-3.jpg"></div>
-          <div data-slide-nmbr="3"><img src="images/dest/services-4.jpg"></div>
-          <div data-slide-nmbr="4"><img src="images/dest/services-5.jpg"></div>
-          <div data-slide-nmbr="5"><img src="images/dest/services-6.jpg"></div>
-          <div data-slide-nmbr="6"><img src="images/dest/services-7.jpg"></div>
+          <div data-slide-nmbr="0">
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-1-m.webp"><img src="images/dest/services-1-m.webp" alt="">
+            </picture>
+          </div>
+          <div data-slide-nmbr="1">
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-2-m.webp"><img src="images/dest/services-2-m.webp" alt="">
+            </picture>
+          </div>
+          <div data-slide-nmbr="2">
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-3-m.webp"><img src="images/dest/services-3-m.webp" alt="">
+            </picture>
+          </div>
+          <div data-slide-nmbr="3">
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-4-m.webp"><img src="images/dest/services-4-m.webp" alt="">
+            </picture>
+          </div>
+          <div data-slide-nmbr="4">
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-5-m.webp"><img src="images/dest/services-5-m.webp" alt="">
+            </picture>
+          </div>
+          <div data-slide-nmbr="5">
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-6-m.webp"><img src="images/dest/services-6-m.webp" alt="">
+            </picture>
+          </div>
+          <div data-slide-nmbr="6">
+            <picture>
+              <source type="image/webp" srcset="images/dest/services-7-m.webp"><img src="images/dest/services-7-m.webp" alt="">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="benefits">
@@ -168,7 +254,9 @@
               <p class="benefits__item-descr">Забираешь готовый заказ на нашем производстве.</p>
             </div>
           </div>
-          <button class="benefits__cta benefits__btn" type="button" onclick="location.href='https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать';">Рассчитать заказ</button>
+          <button class="benefits__btn buttonSocials" type="button"> <span>Рассчитать заказ</span><a href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать">
+              <div data-social="wa"></div></a><a href="https://t.me/+79219580826">
+              <div data-social="tg"></div></a></button>
         </div>
       </section>
       <div class="runstring">
@@ -214,7 +302,7 @@
             <div class="equipment__subtitle">Xerox versant 180</div>
             <div class="equipment__text">со встроенным спектрофотометром, контролирующий цвет печатного оттиска. </div>
           </div>
-          <div class="equipment__printer"><span class="equipment__printer-abs">В общем, зверь, а не машина!</span><img class="equipment__printer-content" src="images/dest/services.webp"></div>
+          <div class="equipment__printer"><span class="equipment__printer-abs">В общем, зверь, а не машина!</span><img class="equipment__printer-content" src="images/dest/services.webp" alt="Xerox versant 180"></div>
         </div>
       </section>
       <section class="delivery">
@@ -241,13 +329,15 @@
         </div>
         <div class="wrapper">
           <div class="contacts__map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A983d3ef20782be9285240e166c0ddb5409ba4632f9c6ba87685d28722b00e109&amp;amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+            <script id="ymap_lazy" type="text/javascript" charset="utf-8" async="" data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4c396d03a24383f57f0c5afac49639d28d4ce260c867f432502f50e4d64bcf1f&amp;amp;width=100%25&amp;amp;height=240&amp;amp;lang=ru_RU&amp;amp;scroll=true"></script>
           </div>
           <div class="contacts__content">
             <h4 class="contacts__title">Контакты:</h4>
             <div class="contacts__items"><a class="contacts__link contacts__addres" href="#">г.Санкт-Петербург, Шоссе Революции, 31 </a><a class="contacts__link contacts__phone" href="tel:330-03-04">330-03-04</a><a class="contacts__link contacts__email" href="mailto: reprint.spb@gmail.com"> reprint.spb@gmail.com</a></div>
-            <button class="contacts__btn" type="button" onclick="location.href='https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать';">Рассчитать заказ</button>
           </div>
+          <button class="contacts__btn buttonSocials" type="button"> <span>Рассчитать заказ</span><a href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать">
+              <div data-social="wa"></div></a><a href="https://t.me/+79219580826">
+              <div data-social="tg"></div></a></button>
         </div>
       </section>
       <script src="js/app.min.js"></script>

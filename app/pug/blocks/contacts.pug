@@ -6,12 +6,17 @@ section.contacts
       span сами
   .wrapper
     .contacts__map
-      iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3A983d3ef20782be9285240e166c0ddb5409ba4632f9c6ba87685d28722b00e109&amp;source=constructor' width='100%' height='100%' frameborder='0')
+      //- iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3A983d3ef20782be9285240e166c0ddb5409ba4632f9c6ba87685d28722b00e109&amp;source=constructor' width='100%' height='100%' frameborder='0')
+      script#ymap_lazy(type='text/javascript' charset='utf-8' async='' data-src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4c396d03a24383f57f0c5afac49639d28d4ce260c867f432502f50e4d64bcf1f&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true')
     .contacts__content
       h4.contacts__title Контакты:
       .contacts__items
         a.contacts__link.contacts__addres(href="#") г.Санкт-Петербург, Шоссе Революции, 31 
         a.contacts__link.contacts__phone(href="tel:330-03-04") 330-03-04
         a.contacts__link.contacts__email(href="mailto: reprint.spb@gmail.com")  reprint.spb@gmail.com
-      button.contacts__btn(type="button" onclick="location.href='https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать';") Рассчитать заказ
-      
+    button.contacts__btn.buttonSocials(type="button") 
+      span Рассчитать заказ
+      a(href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать")
+        div(data-social="wa")
+      a(href="https://t.me/+79219580826")
+        div(data-social="tg")

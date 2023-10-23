@@ -81,14 +81,14 @@ h2
       line-height: 100%
       font-weight: bold
       &[data-color="magenta"]
-        -webkit-text-stroke: 1px $magenta
-        text-stroke: 1px $magenta
+        -webkit-text-stroke: 0.05vw $magenta
+        text-stroke: 0.05vw $magenta
       &[data-color="cyan"]
-        -webkit-text-stroke: 1px $cyan
-        text-stroke: 1px $cyan
+        -webkit-text-stroke: 0.05vw $cyan
+        text-stroke: 0.05vw $cyan
       &[data-color="yellow"]
-        -webkit-text-stroke: 1px $yellow
-        text-stroke: 1px $yellow
+        -webkit-text-stroke: 0.05vw $yellow
+        text-stroke: 0.05vw $yellow
       @include media-laptop
         font-size: calc(250 / 1920) * 100vw
         line-height: 100%
@@ -125,32 +125,82 @@ button
   font-weight: 300
   text-transform: uppercase
   background: #fff
-  border: 1px solid $black
+  border: 0.05vw solid $black
   border-radius: 50px
   padding: calc(9 / 320) * 100vw calc(17 / 320) * 100vw
   margin: 0 auto
   display: block
   min-width: calc(207 / 320) * 100vw
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.65)
-  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.65)
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.65)
+  -webkit-box-shadow: 0px 1.25vw 1.25vw 0px rgba(0, 0, 0, 0.65)
+  -moz-box-shadow: 0px 1.25vw 1.25vw 0px rgba(0, 0, 0, 0.65)
+  box-shadow: 0px 1.25vw 1.25vw 0px rgba(0, 0, 0, 0.65)
   &:hover
     background-color: $yellow
-    -webkit-box-shadow: 0px 12px 11px 0px rgba(0, 0, 0, 0.65)
-    -moz-box-shadow: 0px 12px 11px 0px rgba(0, 0, 0, 0.65)
-    box-shadow: 0px 12px 11px 0px rgba(0, 0, 0, 0.65)
+    -webkit-box-shadow: 0px 3.75vw 3.4375vw 0px rgba(0, 0, 0, 0.65)
+    -moz-box-shadow: 0px 3.75vw 3.4375vw 0px rgba(0, 0, 0, 0.65)
+    box-shadow: 0px 3.75vw 3.4375vw 0px rgba(0, 0, 0, 0.65)
     transition: all .3s
+  &.buttonSocials
+    &.active
+      background: linear-gradient(to left, #29b6f6 50%, #67c15e 50%)
+      font-size: 0
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      padding: calc(3 / 320) * 100vw calc(10 / 320) * 100vw
+      span
+        display: none
+      a
+        width: 50%
+        height: 100%
+        display: block
+        min-height: 25px
+        text-align: center
+      div[data-social="tg"],
+      div[data-social="wa"]
+        display: block
+        width: calc(25 / 320) * 100vw
+        min-width: 25px
+        min-height: 25px
+        height: calc(25 / 320) * 100vw
+        border-radius: calc(7 / 320) * 100vw
+        margin: 0 auto
+        background-image: url('../images/dest/tg-bg.png')
+        background-repeat: no-repeat
+        background-size: 120% 120%
+        background-position: 50% 50%
+      div[data-social="wa"]
+        background-image: url('../images/dest/icons/whatsup-hover.svg')
+      div[data-social="tg"]
+        background-image: url('../images/dest/icons/tg-hover.svg')
 
   @include media-laptop
     min-width: calc(530 / 1920) * 100vw
     font-size: calc(30 / 1920) * 100vw
     line-height: calc(30 / 1920) * 100vw
     padding: calc(20 / 1920) * 100vw calc(22 / 1920) * 100vw
-    border: 3px solid $black
+    border: 0.15625vw solid $black
     &:hover
-      -webkit-box-shadow: 0px 40px 30px 0px rgba(0, 0, 0, 0.65)
-      -moz-box-shadow: 0px 40px 30px 0px rgba(0, 0, 0, 0.65)
-      box-shadow: 0px 40px 30px 0px rgba(0, 0, 0, 0.65)
+      -webkit-box-shadow: 0px 2.1vw 1.5625vw 0px rgba(0, 0, 0, 0.65)
+      -moz-box-shadow: 0px 2.1vw 1.5625vw 0px rgba(0, 0, 0, 0.65)
+      box-shadow: 0px 2.1vw 1.5625vw 0px rgba(0, 0, 0, 0.65)
+    &.buttonSocials
+      &.active
+        padding: calc(8 / 1920) * 100vw calc(10 / 1920) * 100vw
+        a
+          min-height: 35px
+        div[data-social="tg"],
+        div[data-social="wa"]
+          width: calc(60 / 1920) * 100vw
+          min-width: 35px
+          min-height: 35px
+          height: calc(60 / 1920) * 100vw
+          border-radius: calc(15 / 1920) * 100vw
+          background-size: 120% 120%
+          background-position: 50% 50%
 
 
 img
