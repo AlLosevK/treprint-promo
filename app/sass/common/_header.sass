@@ -157,6 +157,11 @@
         margin-right: 0
         width: auto
         text-align: right
+  &__address
+    &-desk
+      display: none
+    &-mob
+      display: block
 
   @include media-laptop
     padding: calc(10 / 1920) * 100vw 0
@@ -230,6 +235,10 @@
       width: calc(208 / 1920) * 100vw
       text-align: right
       font-size: calc(20 / 1920) * 100vw
+      &-mob
+        display: none
+      &-desk
+        display: block
 
 
 .sticky
