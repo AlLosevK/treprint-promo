@@ -110,8 +110,7 @@
     transform-style: preserve-3d
     a
       display: none
-    &:before
-      content: ''
+    &-before
       background-image: url('../images/dest/icons/banner-btn-bg.svg')
       background-size: 100%
       background-repeat: no-repeat
@@ -212,10 +211,10 @@
     &__btn
       width: calc(530 / 1920) * 100vw
       margin-top: calc(187 / 1920) * 100vw
-      // &:before
-      //   top: calc(-62 / 1920) * 100vw
-      //   width: calc(719 / 1920) * 100vw
-      //   height: calc(256 / 1920) * 100vw
+      &-before
+        top: calc(-62 / 1920) * 100vw
+        width: calc(719 / 1920) * 100vw
+        height: calc(256 / 1920) * 100vw
       &:after
         bottom: calc(-34 / 1920) * 100vw
         width: calc(250 / 1920) * 100vw
