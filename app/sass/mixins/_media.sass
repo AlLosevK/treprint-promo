@@ -1,7 +1,7 @@
 @import ../utils/variables
 
 @mixin media-tablet
-  @media (min-width: $mediaWidthTablet), (max-resolution: 192dpi), (orientation: landscape)
+  @media screen and (min-width: $mediaWidthTablet) and (max-resolution: 192dpi) and (orientation: landscape)
     @content
 
 
