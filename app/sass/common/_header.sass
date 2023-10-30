@@ -163,6 +163,13 @@
     &-mob
       display: block
 
+  @include media-custom(768px)
+    &__address
+      &-mob
+        display: none
+      &-desk
+        display: block
+
   @include media-tablet
     padding: calc(10 / 1920) * 100vw 0
     &.sticky
