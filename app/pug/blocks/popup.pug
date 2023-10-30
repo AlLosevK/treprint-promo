@@ -1,1 +1,16 @@
-
+.popup
+  .popup__bg
+  .wrapper
+    .popup__links
+      .popup__link
+        a.popup__link-content(href="tel:88123300304" data-social="tel") позвоните нам
+      .popup__link
+        a.popup__link-content(href="https://t.me/+79219580826" data-social="tg") telegram
+      .popup__link
+        a.popup__link-content(href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать" data-social="wa") whatsapp
+    .popup__form
+      p.popup__text или мы вам перезвоним
+      //- form.popup__form-form(method="POST" action="sendTelegram.php")
+      form.popup__form-form(method="POST" action="#")
+        input.popup__input(id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890")
+        button.popup__btn(type="submit" inert)

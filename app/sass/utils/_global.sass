@@ -12,7 +12,7 @@ body
   font-family: 'Roboto', sans-serif
   font-size: calc(12 / 320) * 100vw
   line-height: 100%
-  @include media-laptop
+  @include media-tablet
     font-size: calc(20 / 1920) * 100vw
     line-height: 100%
 
@@ -25,7 +25,7 @@ header
 
 section
   padding: calc(60 / 320) * 100vw 0
-  @include media-laptop
+  @include media-tablet
     padding: calc(200 / 1920) * 100vw 0
 
 h1,
@@ -41,7 +41,7 @@ h1
   font-size: calc(38 / 320) * 100vw
   line-height: 100%
   font-weight: bold
-  @include media-laptop
+  @include media-tablet
     font-size: calc(120 / 1920) * 100vw
     line-height: 100%
 
@@ -49,14 +49,14 @@ h2
   font-size: calc(24 / 320) * 100vw
   line-height: 100%
   font-weight: bold
-  @include media-laptop
+  @include media-tablet
     font-size: calc(75 / 1920) * 100vw
     line-height: 100%
 
 .section__title
   position: relative
   margin: 0 auto
-  @include media-laptop
+  @include media-tablet
     margin-bottom: calc(132 / 1920) * 100vw
   h3
     text-align: center
@@ -65,7 +65,7 @@ h2
     font-weight: bold
     position: relative
     z-index: 100
-    @include media-laptop
+    @include media-tablet
       font-size: calc(60 / 1920) * 100vw
       line-height: 100%
     & + span
@@ -89,10 +89,10 @@ h2
       &[data-color="yellow"]
         -webkit-text-stroke: 0.15vw $yellow
         text-stroke: 0.15vw $yellow
-      @include media-laptop
+      @include media-tablet
         font-size: calc(250 / 1920) * 100vw
         line-height: 100%
-      @include media-laptop
+      @include media-tablet
         &[data-color="magenta"]
           -webkit-text-stroke: 0.05vw $magenta
           text-stroke: 0.05vw $magenta
@@ -102,7 +102,7 @@ h2
         &[data-color="yellow"]
           -webkit-text-stroke: 0.05vw $yellow
           text-stroke: 0.05vw $yellow
-        @include media-laptop
+        @include media-tablet
           font-size: calc(250 / 1920) * 100vw
           line-height: 100%
 
@@ -111,7 +111,7 @@ h4
   font-size: calc(15 / 320) * 100vw
   line-height: 100%
   font-weight: 900
-  @include media-laptop
+  @include media-tablet
     font-size: calc(32 / 1920) * 100vw
     line-height: 100%
 
@@ -121,7 +121,7 @@ p
   font-size: calc(12 / 320) * 100vw
   font-weight: normal
   line-height: 100%
-  @include media-laptop
+  @include media-tablet
     font-size: calc(20 / 1920) * 100vw
     line-height: 100%
 
@@ -190,7 +190,7 @@ button
       div[data-social="tg"]
         background-image: url('../images/dest/icons/tg-hover.svg')
 
-  @include media-laptop
+  @include media-tablet
     min-width: calc(530 / 1920) * 100vw
     font-size: calc(30 / 1920) * 100vw
     line-height: calc(30 / 1920) * 100vw

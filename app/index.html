@@ -329,6 +329,23 @@
           </button>
         </div>
       </section>
+      <div class="popup">
+        <div class="popup__bg"></div>
+        <div class="wrapper">
+          <div class="popup__links">
+            <div class="popup__link"><a class="popup__link-content" href="tel:88123300304" data-social="tel">позвоните нам</a></div>
+            <div class="popup__link"><a class="popup__link-content" href="https://t.me/+79219580826" data-social="tg">telegram</a></div>
+            <div class="popup__link"><a class="popup__link-content" href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать" data-social="wa">whatsapp</a></div>
+          </div>
+          <div class="popup__form">
+            <p class="popup__text">или мы вам перезвоним</p>
+            <form class="popup__form-form" method="POST" action="#">
+              <input class="popup__input" id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
+              <button class="popup__btn" type="submit" inert></button>
+            </form>
+          </div>
+        </div>
+      </div>
       <script src="js/app.min.js"></script>
     </main>
   </body>

@@ -1,1 +1,108 @@
+.popup
+  display: none
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 200
+  &__bg
+    width: 100vw
+    height: 100vh
+    background-color: $yellow
+    opacity: .35
+    z-index: 200
+  .wrapper
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 201
+    background-color: #fff
+    padding: 30px 15px
+    gap: 60px
+    width: auto
+  &__links
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: stretch
+    gap: 15px
+    max-width: 320px
+    width: 80%
+  &__link
+    &-content
+      display: block
+      width: 100%
+      text-align: center
+      padding: 8px 0
+      border-radius: 5px
+      font-size: 15px
+      font-weight: 300
+      text-transform: uppercase
+      color: #fff
+      border: 1px solid #000
+      -webkit-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
+      -moz-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
+      box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
+      &:hover
+        -webkit-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
+        -moz-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
+        box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
+        transition: all .3s
+        color: #fff
+      &[data-social="tel"]
+        background-color: $magenta
+      &[data-social="wa"]
+        background-color: #29b6f6
+      &[data-social="tg"]
+        background-color: #67c15e
+  &__form
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 20px
+    &-form
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: stretch
+      gap: 5px
+  &__text
+    font-size: 17px
+    text-transform: uppercase
+    font-weight: 300
+  &__input
+    border-radius: 5px
+    border: 1px solid #000
+  &__btn
+    width: 30px
+    max-width: 30px
+    min-width: 30px
+    border-radius: 5px
+    -webkit-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
+    -moz-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
+    box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
+    &:hover
+      -webkit-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
+      -moz-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
+      box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
 
+
+  @include media-tablet
+    .wrapper
+      flex-direction: row
+      justify-content: center
+      padding: 5vw 8vw
+    &__link
+      min-width: 23vw
+    &__btn
+      min-width: 50px
+      max-width: 50px
