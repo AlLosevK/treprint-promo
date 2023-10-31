@@ -329,6 +329,36 @@
           </button>
         </div>
       </section>
+      <div class="popup">
+        <div class="popup__bg"></div>
+        <div class="wrapper">
+              <svg class="icon icon-popup-close popup__close-icon">
+                <use xlink:href="images/dest/sprite.svg#popup-close"></use>
+              </svg>
+          <div class="popup__links">
+            <div class="popup__link"><a class="popup__link-content" href="tel:88123300304" data-social="tel"> </a>
+              <div class="popup__link-abs">позвоните нам</div>
+            </div>
+            <div class="popup__link"><a class="popup__link-content" href="https://t.me/+79219580826" data-social="tg"></a>
+              <div class="popup__link-abs">telegram</div>
+            </div>
+            <div class="popup__link"><a class="popup__link-content" href="https://wa.me/79219580826?text=Хочу%20заказать%20цифровую%20печать" data-social="wa"></a>
+              <div class="popup__link-abs">whatsapp</div>
+            </div>
+          </div>
+          <div class="popup__form">
+            <p class="popup__text">или мы вам перезвоним</p>
+            <form class="popup__form-form" method="POST" action="#">
+              <input class="popup__input" id="phone" type="tel" name="phone" pattern="[0-9]{10}" required placeholder="10 цифр, 1234567890">
+              <button class="popup__btn" type="submit" inert>
+                    <svg class="icon icon-popup-submit popup__btn-icon">
+                      <use xlink:href="images/dest/sprite.svg#popup-submit"></use>
+                    </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
       <script src="js/app.min.js"></script>
     </main>
   </body>
