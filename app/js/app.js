@@ -63,6 +63,26 @@ $(document).ready(function() {
  });
 
  $('.buttonSocials').on("click", function() {
-   $(this).addClass('active');
+   $('.popup').addClass('active');
+ });
+
+ $('.popup__close-icon').on("click", function() {
+   $('.popup').removeClass('active');
+ });
+
+ $('.popup__bg').on("click", function() {
+   $('.popup').removeClass('active');
+ });
+
+ $('.popup__input').on('keyup', function() {
+    if ($('.popup__input')[0].value.length == 10) {
+      $('.popup__btn').removeAttr('inert');
+    } else {
+      $('.popup__btn').attr('inert', '');
+    }
+ });
+
+ $('.popup__btn').on('click', function() {
+   
  });
 })

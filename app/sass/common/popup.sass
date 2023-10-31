@@ -39,12 +39,24 @@
     justify-content: center
     align-items: stretch
     gap: calc(15 / 320) * 100vw
+    min-width: calc(200 / 320) * 100vw
     max-width: calc(280 / 320) * 100vw
     width: 80%
   &__link
     height: calc(30 / 320) * 100vw
     min-height: 30px
     position: relative
+    border-radius: 5px
+    min-width: calc(400 / 1920) * 100vw
+    -webkit-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
+    -moz-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
+    box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
+    &:hover
+      -webkit-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
+      -moz-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
+      box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
+      transition: all .3s
+      color: #fff
     &-abs
       position: absolute
       top: 50%
@@ -58,6 +70,7 @@
       font-weight: 300
       text-align: center
       text-transform: uppercase
+      cursor: pointer
       &:before
         content: ''
         position: absolute
@@ -66,16 +79,19 @@
         width: calc(25 / 320) * 100vw
         height: calc(25 / 320) * 100vw
         transform: translate(0%, -50%)
-        border-radius: calc(7 / 320) * 100vw
+        border-radius: 7px
         background-repeat: no-repeat
         background-size: 120% 120%
         background-position: 50% 50%
     &-content
       display: block
+      position: relative
+      // z-index: 250
       width: 100%
+      min-width: calc(200/ 320) * 100vw
       min-height: 100%
       padding: calc(8 / 320) * 100vw 0
-      border-radius: calc(5 / 320) * 100vw
+      border-radius: 5px
       text-transform: uppercase
       position: relative
       border: 1px solid #000
@@ -113,6 +129,7 @@
     justify-content: center
     align-items: center
     gap: calc(20 / 320) * 100vw
+    position: relative
     &-form
       display: -webkit-flex
       display: -ms-flex
@@ -121,12 +138,14 @@
       justify-content: space-between
       align-items: stretch
       gap: calc(5 / 320) * 100vw
+      width: 100%
   &__text
     font-size: calc(17 / 320) * 100vw
     text-transform: uppercase
     font-weight: 300
     position: relative
     z-index: 250
+    text-align: center
     &:before
       content: ''
       background-image: url('../images/dest/icons/services-worm.svg')
@@ -141,12 +160,14 @@
       transform: rotate(90deg) translate(320%, 0%)
       z-index: 250
   &__input
-    border-radius: calc(5 / 320) * 100vw
+    border-radius: 5px
     border: 1px solid #000
+    width: 80%
+    font-size: calc(15 / 320) * 100vw
   &__btn
     width: calc(30 / 320) * 100vw
     min-width: 30px
-    border-radius: calc(5 / 320) * 100vw
+    border-radius: 5px
     padding: 0
     display: -webkit-flex
     display: -ms-flex
@@ -161,7 +182,9 @@
       width: calc(19 / 320) * 100vw
       height: calc(13 / 320) * 100vw
     &[inert]
+      background-color: #fff
       .popup__btn-icon
+        display: none
     &:hover
       -webkit-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
       -moz-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
@@ -173,8 +196,55 @@
       flex-direction: row
       justify-content: center
       padding: 5vw 8vw
+      gap: calc(250 / 1920) *100vw
+      padding: calc(115 / 1920) * 100vw calc(70 / 1920) * 100vw
+      min-width: calc(1130 / 1920) * 100vw
+      &:before
+        content: ''
+        background-image: url('../images/dest/icons/services-worm.svg')
+        background-size: contain
+        background-repeat: no-repeat
+        position: absolute
+        height: calc(190 / 1920) * 100vw
+        width: calc(15 / 1920) * 100vw
+        bottom: 50%
+        left: 50%
+        transform: rotate(0deg) translate(0%, 50%)
+      .popup__close-icon
+        top: calc(20 / 1920) * 100vw
+        right: calc(35 / 1920) * 100vw
+        width: calc(40 / 1920) * 100vw
+        height: calc(40 / 1920) * 100vw
+    &__links
+      gap: calc(45 / 1920) * 100vw
+      max-width: calc(395 / 1920) * 100vw
     &__link
-      min-width: 23vw
+      min-height: 20px
+      height: calc(60 / 1920) * 100vw
+      border-radius: 15px
+      &-content
+        padding: calc(20 / 1920) * 100vw 0
+        border-radius: 15px
+      &-abs
+        font-size: calc(30 / 1920) * 100vw
+        line-height: 140%
+        &:before
+          width: calc(39 / 1920) * 100vw
+          height: calc(39 / 1920) * 100vw
+          left: calc(-50 / 1920) * 100vw
+    &__form
+      min-width: calc(450 /1920) * 100vw
+      gap: calc(30 / 1920) * 100vw
+    &__text
+      font-size: calc(30 / 1920) * 100vw
+      &:before
+        display: none
+    &__input
+      font-size: calc(30 / 1920) * 100vw
+      max-width: calc(308 / 1920) * 100vw
     &__btn
       min-width: 50px
-      max-width: 50px
+      padding: calc(10 / 1920) * 100vw
+      &-icon
+        width: calc(56 / 1920) * 100vw
+        height: calc(40 / 1920) * 100vw
