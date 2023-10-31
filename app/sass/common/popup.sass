@@ -6,9 +6,12 @@
   top: 0
   left: 0
   z-index: 200
+  &.active
+    display: block
   &__bg
     width: 100vw
     height: 100vh
+    position: relative
     background-color: $yellow
     opacity: .35
     z-index: 200
@@ -19,9 +22,15 @@
     transform: translate(-50%, -50%)
     z-index: 201
     background-color: #fff
-    padding: 30px 15px
-    gap: 60px
+    padding: calc(30 / 320) * 100vw calc(15 / 320) * 100vw
+    gap: calc(60 / 320) * 100vw
     width: auto
+    .popup__close-icon
+      position: absolute
+      top: calc(8 / 320) * 100vw
+      right: calc(12 / 320) * 100vw
+      width: calc(15 / 320) * 100vw
+      height: calc(15 / 320) * 100vw
   &__links
     display: -webkit-flex
     display: -ms-flex
@@ -29,20 +38,46 @@
     flex-direction: column
     justify-content: center
     align-items: stretch
-    gap: 15px
-    max-width: 320px
+    gap: calc(15 / 320) * 100vw
+    max-width: calc(280 / 320) * 100vw
     width: 80%
   &__link
+    height: calc(30 / 320) * 100vw
+    min-height: 30px
+    position: relative
+    &-abs
+      position: absolute
+      top: 50%
+      left: 50%
+      width: auto
+      display: block
+      white-space: nowrap
+      transform: translate(-50%, -50%)
+      color: #fff
+      font-size: calc(15 / 320) * 100vw
+      font-weight: 300
+      text-align: center
+      text-transform: uppercase
+      &:before
+        content: ''
+        position: absolute
+        left: calc(-28 / 320) * 100vw
+        top: 50%
+        width: calc(25 / 320) * 100vw
+        height: calc(25 / 320) * 100vw
+        transform: translate(0%, -50%)
+        border-radius: calc(7 / 320) * 100vw
+        background-repeat: no-repeat
+        background-size: 120% 120%
+        background-position: 50% 50%
     &-content
       display: block
       width: 100%
-      text-align: center
-      padding: 8px 0
-      border-radius: 5px
-      font-size: 15px
-      font-weight: 300
+      min-height: 100%
+      padding: calc(8 / 320) * 100vw 0
+      border-radius: calc(5 / 320) * 100vw
       text-transform: uppercase
-      color: #fff
+      position: relative
       border: 1px solid #000
       -webkit-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
       -moz-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
@@ -55,10 +90,21 @@
         color: #fff
       &[data-social="tel"]
         background-color: $magenta
-      &[data-social="wa"]
-        background-color: #29b6f6
+        &+.popup__link-abs
+          &:before
+            background-image: url('../images/dest/icons/popup-tel.svg')
+            background-size: 70% 70%
       &[data-social="tg"]
+        background-color: #29b6f6
+        &+.popup__link-abs
+          &:before
+            background-image: url('../images/dest/icons/tg-hover.svg')
+      &[data-social="wa"]
         background-color: #67c15e
+        &+.popup__link-abs
+          &:before
+            background-image: url('../images/dest/icons/whatsup-hover.svg')
+
   &__form
     display: -webkit-flex
     display: -ms-flex
@@ -66,7 +112,7 @@
     flex-direction: column
     justify-content: center
     align-items: center
-    gap: 20px
+    gap: calc(20 / 320) * 100vw
     &-form
       display: -webkit-flex
       display: -ms-flex
@@ -74,22 +120,48 @@
       flex-direction: row
       justify-content: space-between
       align-items: stretch
-      gap: 5px
+      gap: calc(5 / 320) * 100vw
   &__text
-    font-size: 17px
+    font-size: calc(17 / 320) * 100vw
     text-transform: uppercase
     font-weight: 300
+    position: relative
+    z-index: 250
+    &:before
+      content: ''
+      background-image: url('../images/dest/icons/services-worm.svg')
+      background-size: contain
+      background-repeat: no-repeat
+      position: absolute
+      height: calc(146 / 320) * 100vw
+      width: calc(10 / 320) * 100vw
+      bottom: -00%
+      left: 50%
+      // transform: rotate(90deg) translate(710%, -46%)
+      transform: rotate(90deg) translate(320%, 0%)
+      z-index: 250
   &__input
-    border-radius: 5px
+    border-radius: calc(5 / 320) * 100vw
     border: 1px solid #000
   &__btn
-    width: 30px
-    max-width: 30px
+    width: calc(30 / 320) * 100vw
     min-width: 30px
-    border-radius: 5px
+    border-radius: calc(5 / 320) * 100vw
+    padding: 0
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
     -webkit-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
     -moz-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
     box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
+    &-icon
+      width: calc(19 / 320) * 100vw
+      height: calc(13 / 320) * 100vw
+    &[inert]
+      .popup__btn-icon
     &:hover
       -webkit-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
       -moz-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
