@@ -13,7 +13,7 @@
     height: 100vh
     position: relative
     background-color: $yellow
-    opacity: .35
+    opacity: .65
     z-index: 200
   .wrapper
     position: absolute
@@ -182,7 +182,7 @@
       width: calc(19 / 320) * 100vw
       height: calc(13 / 320) * 100vw
     &[inert]
-      background-color: #fff
+      box-shadow: 0px 0 0 0px rgba(0, 0, 0)
       .popup__btn-icon
         display: none
     &:hover
@@ -225,6 +225,7 @@
       &-content
         padding: calc(20 / 1920) * 100vw 0
         border-radius: 15px
+        min-width: calc(400 / 1920) * 100vw
       &-abs
         font-size: calc(30 / 1920) * 100vw
         line-height: 140%
@@ -244,6 +245,7 @@
       max-width: calc(308 / 1920) * 100vw
     &__btn
       min-width: 50px
+      max-width: 100px
       padding: calc(10 / 1920) * 100vw
       &-icon
         width: calc(56 / 1920) * 100vw

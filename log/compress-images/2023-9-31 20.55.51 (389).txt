@@ -1,0 +1,16 @@
+File from: [app/images/src/services-10.png]
+
+File to: [app/images/dest/services-10.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: /Users/salamander/Documents/work/treprint-promo/node_modules/pngquant-bin/vendor/pngquant --quality=75-100 -o app/images/dest/services-10.png app/images/src/services-10.png
+  error: failed writing image to app/images/dest/services-10.png (16)
+File from: [app/images/src/services-12.png]
+
+File to: [app/images/dest/services-12.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: /Users/salamander/Documents/work/treprint-promo/node_modules/pngquant-bin/vendor/pngquant --quality=75-100 -o app/images/dest/services-12.png app/images/src/services-12.png
+  error: failed writing image to app/images/dest/services-12.png (16)

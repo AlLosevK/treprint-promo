@@ -41,12 +41,12 @@ $(document).ready(function() {
  });
  $('.slider-nav').slick({
    slidesToShow: 7,
-   slidesToScroll: 7,
+   slidesToScroll: 1,
    asNavFor: '.slider-for',
    dots: false,
    arrows: false,
    focusOnSelect: true,
-   centerMode: false,
+   centerMode: true,
    infinite: true,
    responsive: [
      {
@@ -83,6 +83,6 @@ $(document).ready(function() {
  });
 
  $('.popup__btn').on('click', function() {
-   
+
  });
 })
