@@ -178,13 +178,20 @@
     -webkit-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
     -moz-box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
     box-shadow: 0px .41vw .41vw 0px rgba(0, 0, 0, 0.65)
+    transition: all .3s
     &-icon
       width: calc(19 / 320) * 100vw
       height: calc(13 / 320) * 100vw
+      transition: all .3s
+      &.icon-popup-btn-inert
+        display: none
     &[inert]
       box-shadow: 0px 0 0 0px rgba(0, 0, 0)
       .popup__btn-icon
-        display: none
+        &.icon-popup-submit
+          display: none
+        &.icon-popup-btn-inert
+          display: block
     &:hover
       -webkit-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)
       -moz-box-shadow: 0px .92vw .97vw 0px rgba(0, 0, 0, 0.65)

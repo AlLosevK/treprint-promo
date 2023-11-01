@@ -15,7 +15,8 @@
     .popup__form
       p.popup__text или мы вам перезвоним
       //- form.popup__form-form(method="POST" action="sendTelegram.php")
-      form.popup__form-form(method="POST" action="#")
-        input.popup__input(id="phone" type="tel" name="phone" pattern="[0-9]{10}" required placeholder="10 цифр, 1234567890")
+      form.popup__form-form(method="POST" action="php/form.php")
+        input.popup__input(id="phone" type="tel" name="phone" pattern="[0-9]{5, 12}" required placeholder="Введите телефон")
         button.popup__btn(type="submit" inert)
           +icon('popup-submit', 'popup__btn-icon')
+          +icon('popup-btn-inert', 'popup__btn-icon')

@@ -75,7 +75,7 @@ $(document).ready(function() {
  });
 
  $('.popup__input').on('keyup', function() {
-    if ($('.popup__input')[0].value.length == 10) {
+    if ($('.popup__input')[0].value.length > 4 && $('.popup__input')[0].value.length < 13) {
       $('.popup__btn').removeAttr('inert');
     } else {
       $('.popup__btn').attr('inert', '');

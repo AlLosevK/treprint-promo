@@ -151,26 +151,10 @@
           </div>
           <div>
             <picture>
-              <source type="image/webp" srcset="images/dest/services-5-m.webp" media="(max-width: 400px)">
-              <source type="image/webp" srcset="images/dest/services-5-l.webp" media="(max-width: 720px)">
-              <source type="image/webp" srcset="images/dest/services-5-lg.webp" media="(max-width: 1110px)">
-              <source type="image/webp" srcset="images/dest/services-5.webp" media="(min-width: 1110px)"><img src="images/dest/services-5-l.png" alt="Календарь трио">
-            </picture>
-          </div>
-          <div>
-            <picture>
               <source type="image/webp" srcset="images/dest/services-6-m.webp" media="(max-width: 400px)">
               <source type="image/webp" srcset="images/dest/services-6-l.webp" media="(max-width: 720px)">
               <source type="image/webp" srcset="images/dest/services-6-lg.webp" media="(max-width: 1110px)">
               <source type="image/webp" srcset="images/dest/services-6.webp" media="(min-width: 1110px)"><img src="images/dest/services-6-l.png" alt="Читательский билет">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source type="image/webp" srcset="images/dest/services-7-m.webp" media="(max-width: 400px)">
-              <source type="image/webp" srcset="images/dest/services-7-l.webp" media="(max-width: 720px)">
-              <source type="image/webp" srcset="images/dest/services-7-lg.webp" media="(max-width: 1110px)">
-              <source type="image/webp" srcset="images/dest/services-7.webp" media="(min-width: 1110px)"><img src="images/dest/services-7-l.png" alt="Бирка для одежды">
             </picture>
           </div>
           <div>
@@ -243,19 +227,9 @@
               <source type="image/webp" srcset="images/dest/services-4-m.webp"><img src="images/dest/services-4-m.webp" alt="">
             </picture>
           </div>
-          <div data-slide-nmbr="4">
-            <picture>
-              <source type="image/webp" srcset="images/dest/services-5-m.webp"><img src="images/dest/services-5-m.webp" alt="">
-            </picture>
-          </div>
           <div data-slide-nmbr="5">
             <picture>
               <source type="image/webp" srcset="images/dest/services-6-m.webp"><img src="images/dest/services-6-m.webp" alt="">
-            </picture>
-          </div>
-          <div data-slide-nmbr="6">
-            <picture>
-              <source type="image/webp" srcset="images/dest/services-7-m.webp"><img src="images/dest/services-7-m.webp" alt="">
             </picture>
           </div>
           <div data-slide-nmbr="7">
@@ -426,11 +400,14 @@
           </div>
           <div class="popup__form">
             <p class="popup__text">или мы вам перезвоним</p>
-            <form class="popup__form-form" method="POST" action="#">
-              <input class="popup__input" id="phone" type="tel" name="phone" pattern="[0-9]{10}" required placeholder="10 цифр, 1234567890">
+            <form class="popup__form-form" method="POST" action="php/form.php">
+              <input class="popup__input" id="phone" type="tel" name="phone" pattern="[0-9]{5, 12}" required placeholder="Введите телефон">
               <button class="popup__btn" type="submit" inert>
                     <svg class="icon icon-popup-submit popup__btn-icon">
                       <use xlink:href="images/dest/sprite.svg#popup-submit"></use>
+                    </svg>
+                    <svg class="icon icon-popup-btn-inert popup__btn-icon">
+                      <use xlink:href="images/dest/sprite.svg#popup-btn-inert"></use>
                     </svg>
               </button>
             </form>
